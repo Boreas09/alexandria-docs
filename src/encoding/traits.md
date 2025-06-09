@@ -8,11 +8,13 @@
 
 - [base64::Decoder](./alexandria_encoding-base64-Decoder.md)
 
-- [ReversibleBytes](./alexandria_encoding-reversible-ReversibleBytes.md)
+- [ByteArrayEncoder](./alexandria_encoding-base64-ByteArrayEncoder.md)
 
-- [ReversibleBits](./alexandria_encoding-reversible-ReversibleBits.md)
+- [ByteArrayDecoder](./alexandria_encoding-base64-ByteArrayDecoder.md)
 
-- [RLPTrait](./alexandria_encoding-rlp-RLPTrait.md)
+- [rlp::RLPTrait](./alexandria_encoding-rlp-RLPTrait.md)
+
+- [rlp_byte_array::RLPTrait](./alexandria_encoding-rlp_byte_array-RLPTrait.md)
 
 - [SolAbiDecodeTrait](./alexandria_encoding-sol_abi-decode-SolAbiDecodeTrait.md)
 

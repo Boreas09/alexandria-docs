@@ -12,6 +12,8 @@ pub trait SolAbiEncodeSelectorTrait
 
 ### encode_selector
 
+Encodes a function selector as 4 bytes at the beginning of the data # Arguments * `self` - The Bytes object to append the selector to * `selector` - The 4-byte function selector (u32) # Returns * `Bytes` - The original Bytes object with the selector appended
+
 Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeSelectorTrait::encode_selector`
 
 ```rust

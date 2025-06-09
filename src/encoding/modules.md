@@ -6,9 +6,9 @@
 
 - [base64](./alexandria_encoding-base64.md)
 
-- [reversible](./alexandria_encoding-reversible.md)
-
 - [rlp](./alexandria_encoding-rlp.md)
+
+- [rlp_byte_array](./alexandria_encoding-rlp_byte_array.md)
 
 - [sol_abi](./alexandria_encoding-sol_abi.md)
 

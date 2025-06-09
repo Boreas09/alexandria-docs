@@ -1,5 +1,7 @@
 # Base58Encoder
 
+Base58 encoder implementation for u8 spans
+
 Fully qualified path: `alexandria_encoding::base58::Base58Encoder`
 
 ```rust

@@ -39,6 +39,8 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree`
 
 - [MerkleTree](./alexandria_merkle_tree-merkle_tree-MerkleTree.md)
 
+- [StoredMerkleTree](./alexandria_merkle_tree-merkle_tree-StoredMerkleTree.md)
+
 ## Traits
 
 - [HasherTrait](./alexandria_merkle_tree-merkle_tree-HasherTrait.md)

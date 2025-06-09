@@ -22,6 +22,8 @@
 
   - [MerkleTree](./alexandria_merkle_tree-merkle_tree-MerkleTree.md)
 
+  - [StoredMerkleTree](./alexandria_merkle_tree-merkle_tree-StoredMerkleTree.md)
+
   - [BinaryNode](./alexandria_merkle_tree-storage_proof-BinaryNode.md)
 
   - [EdgeNode](./alexandria_merkle_tree-storage_proof-EdgeNode.md)

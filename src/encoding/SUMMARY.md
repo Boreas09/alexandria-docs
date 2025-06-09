@@ -8,9 +8,9 @@
 
   - [base64](./alexandria_encoding-base64.md)
 
-  - [reversible](./alexandria_encoding-reversible.md)
-
   - [rlp](./alexandria_encoding-rlp.md)
+
+  - [rlp_byte_array](./alexandria_encoding-rlp_byte_array.md)
 
   - [sol_abi](./alexandria_encoding-sol_abi.md)
 
@@ -30,17 +30,21 @@
 
   - [encode_felt](./alexandria_encoding-base64-encode_felt.md)
 
-  - [reversing](./alexandria_encoding-reversible-reversing.md)
-
-  - [reversing_partial_result](./alexandria_encoding-reversible-reversing_partial_result.md)
+  - [encode_byte_array](./alexandria_encoding-base64-encode_byte_array.md)
 
 - [Enums](./enums.md)
 
-  - [RLPError](./alexandria_encoding-rlp-RLPError.md)
+  - [rlp::RLPError](./alexandria_encoding-rlp-RLPError.md)
 
-  - [RLPType](./alexandria_encoding-rlp-RLPType.md)
+  - [rlp::RLPType](./alexandria_encoding-rlp-RLPType.md)
 
   - [RLPItem](./alexandria_encoding-rlp-RLPItem.md)
+
+  - [rlp_byte_array::RLPError](./alexandria_encoding-rlp_byte_array-RLPError.md)
+
+  - [rlp_byte_array::RLPType](./alexandria_encoding-rlp_byte_array-RLPType.md)
+
+  - [RLPItemByteArray](./alexandria_encoding-rlp_byte_array-RLPItemByteArray.md)
 
 - [Traits](./traits.md)
 
@@ -52,11 +56,13 @@
 
   - [base64::Decoder](./alexandria_encoding-base64-Decoder.md)
 
-  - [ReversibleBytes](./alexandria_encoding-reversible-ReversibleBytes.md)
+  - [ByteArrayEncoder](./alexandria_encoding-base64-ByteArrayEncoder.md)
 
-  - [ReversibleBits](./alexandria_encoding-reversible-ReversibleBits.md)
+  - [ByteArrayDecoder](./alexandria_encoding-base64-ByteArrayDecoder.md)
 
-  - [RLPTrait](./alexandria_encoding-rlp-RLPTrait.md)
+  - [rlp::RLPTrait](./alexandria_encoding-rlp-RLPTrait.md)
+
+  - [rlp_byte_array::RLPTrait](./alexandria_encoding-rlp_byte_array-RLPTrait.md)
 
   - [SolAbiDecodeTrait](./alexandria_encoding-sol_abi-decode-SolAbiDecodeTrait.md)
 
@@ -82,11 +88,19 @@
 
   - [Base64UrlFeltEncoder](./alexandria_encoding-base64-Base64UrlFeltEncoder.md)
 
+  - [Base64ByteArrayEncoder](./alexandria_encoding-base64-Base64ByteArrayEncoder.md)
+
+  - [Base64ByteArrayUrlEncoder](./alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
+
   - [Base64Decoder](./alexandria_encoding-base64-Base64Decoder.md)
 
   - [Base64UrlDecoder](./alexandria_encoding-base64-Base64UrlDecoder.md)
 
-  - [RLPImpl](./alexandria_encoding-rlp-RLPImpl.md)
+  - [Base64ByteArrayDecoder](./alexandria_encoding-base64-Base64ByteArrayDecoder.md)
+
+  - [rlp::RLPImpl](./alexandria_encoding-rlp-RLPImpl.md)
+
+  - [rlp_byte_array::RLPImpl](./alexandria_encoding-rlp_byte_array-RLPImpl.md)
 
   - [SolAbiDecodeU8](./alexandria_encoding-sol_abi-decode-SolAbiDecodeU8.md)
 

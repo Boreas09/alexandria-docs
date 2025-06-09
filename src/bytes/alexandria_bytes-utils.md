@@ -6,6 +6,8 @@ Fully qualified path: `alexandria_bytes::utils`
 
 - [keccak_u128s_be](./alexandria_bytes-utils-keccak_u128s_be.md)
 
+- [u256_reverse_endian](./alexandria_bytes-utils-u256_reverse_endian.md)
+
 - [u8_array_to_u256](./alexandria_bytes-utils-u8_array_to_u256.md)
 
 - [u32s_to_u256](./alexandria_bytes-utils-u32s_to_u256.md)

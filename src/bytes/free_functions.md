@@ -1,6 +1,18 @@
 # Free functions
 
+- [shift_bit](./alexandria_bytes-bit_array-shift_bit.md)
+
+- [one_shift_left_bytes_felt252](./alexandria_bytes-bit_array-one_shift_left_bytes_felt252.md)
+
+- [one_shift_left_bytes_u128](./alexandria_bytes-bit_array-one_shift_left_bytes_u128.md)
+
+- [reversing](./alexandria_bytes-reversible-reversing.md)
+
+- [reversing_partial_result](./alexandria_bytes-reversible-reversing_partial_result.md)
+
 - [keccak_u128s_be](./alexandria_bytes-utils-keccak_u128s_be.md)
+
+- [u256_reverse_endian](./alexandria_bytes-utils-u256_reverse_endian.md)
 
 - [u8_array_to_u256](./alexandria_bytes-utils-u8_array_to_u256.md)
 

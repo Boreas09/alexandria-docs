@@ -12,11 +12,19 @@
 
 - [Base64UrlFeltEncoder](./alexandria_encoding-base64-Base64UrlFeltEncoder.md)
 
+- [Base64ByteArrayEncoder](./alexandria_encoding-base64-Base64ByteArrayEncoder.md)
+
+- [Base64ByteArrayUrlEncoder](./alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
+
 - [Base64Decoder](./alexandria_encoding-base64-Base64Decoder.md)
 
 - [Base64UrlDecoder](./alexandria_encoding-base64-Base64UrlDecoder.md)
 
-- [RLPImpl](./alexandria_encoding-rlp-RLPImpl.md)
+- [Base64ByteArrayDecoder](./alexandria_encoding-base64-Base64ByteArrayDecoder.md)
+
+- [rlp::RLPImpl](./alexandria_encoding-rlp-RLPImpl.md)
+
+- [rlp_byte_array::RLPImpl](./alexandria_encoding-rlp_byte_array-RLPImpl.md)
 
 - [SolAbiDecodeU8](./alexandria_encoding-sol_abi-decode-SolAbiDecodeU8.md)
 

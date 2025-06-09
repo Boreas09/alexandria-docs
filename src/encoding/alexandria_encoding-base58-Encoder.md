@@ -10,6 +10,8 @@ pub trait Encoder<T>
 
 ### encode
 
+Encodes data into Base58 format  # Arguments * `data` - The data to encode  # Returns * `Array<u8>` - Base58 encoded representation as bytes
+
 Fully qualified path: `alexandria_encoding::base58::Encoder::encode`
 
 ```rust

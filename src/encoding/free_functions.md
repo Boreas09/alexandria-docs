@@ -6,7 +6,5 @@
 
 - [encode_felt](./alexandria_encoding-base64-encode_felt.md)
 
-- [reversing](./alexandria_encoding-reversible-reversing.md)
-
-- [reversing_partial_result](./alexandria_encoding-reversible-reversing_partial_result.md)
+- [encode_byte_array](./alexandria_encoding-base64-encode_byte_array.md)
 

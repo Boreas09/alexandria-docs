@@ -10,6 +10,8 @@ pub impl MergeSort of Sortable
 
 ### sort
 
+  # Arguments * `arr` - Array to sort # Returns * `Array<T>` - Sorted array
+
 Fully qualified path: `alexandria_sorting::merge_sort::MergeSort::sort`
 
 ```rust

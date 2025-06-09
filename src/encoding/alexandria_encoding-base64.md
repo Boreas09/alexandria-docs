@@ -8,11 +8,17 @@ Fully qualified path: `alexandria_encoding::base64`
 
 - [encode_felt](./alexandria_encoding-base64-encode_felt.md)
 
+- [encode_byte_array](./alexandria_encoding-base64-encode_byte_array.md)
+
 ## Traits
 
 - [Encoder](./alexandria_encoding-base64-Encoder.md)
 
 - [Decoder](./alexandria_encoding-base64-Decoder.md)
+
+- [ByteArrayEncoder](./alexandria_encoding-base64-ByteArrayEncoder.md)
+
+- [ByteArrayDecoder](./alexandria_encoding-base64-ByteArrayDecoder.md)
 
 ## Impls
 
@@ -24,7 +30,13 @@ Fully qualified path: `alexandria_encoding::base64`
 
 - [Base64UrlFeltEncoder](./alexandria_encoding-base64-Base64UrlFeltEncoder.md)
 
+- [Base64ByteArrayEncoder](./alexandria_encoding-base64-Base64ByteArrayEncoder.md)
+
+- [Base64ByteArrayUrlEncoder](./alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
+
 - [Base64Decoder](./alexandria_encoding-base64-Base64Decoder.md)
 
 - [Base64UrlDecoder](./alexandria_encoding-base64-Base64UrlDecoder.md)
+
+- [Base64ByteArrayDecoder](./alexandria_encoding-base64-Base64ByteArrayDecoder.md)
 

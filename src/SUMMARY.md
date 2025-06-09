@@ -24,9 +24,17 @@
 
       - [alexandria_bytes](bytes/alexandria_bytes.md)
 
+      - [bit_array](bytes/alexandria_bytes-bit_array.md)
+
+      - [byte_appender](bytes/alexandria_bytes-byte_appender.md)
+
       - [byte_array_ext](bytes/alexandria_bytes-byte_array_ext.md)
 
+      - [byte_reader](bytes/alexandria_bytes-byte_reader.md)
+
       - [bytes](bytes/alexandria_bytes-bytes.md)
+
+      - [reversible](bytes/alexandria_bytes-reversible.md)
 
       - [storage](bytes/alexandria_bytes-storage.md)
 
@@ -38,7 +46,19 @@
 
     - [Free functions](bytes/free_functions.md)
 
+      - [shift_bit](bytes/alexandria_bytes-bit_array-shift_bit.md)
+
+      - [one_shift_left_bytes_felt252](bytes/alexandria_bytes-bit_array-one_shift_left_bytes_felt252.md)
+
+      - [one_shift_left_bytes_u128](bytes/alexandria_bytes-bit_array-one_shift_left_bytes_u128.md)
+
+      - [reversing](bytes/alexandria_bytes-reversible-reversing.md)
+
+      - [reversing_partial_result](bytes/alexandria_bytes-reversible-reversing_partial_result.md)
+
       - [keccak_u128s_be](bytes/alexandria_bytes-utils-keccak_u128s_be.md)
+
+      - [u256_reverse_endian](bytes/alexandria_bytes-utils-u256_reverse_endian.md)
 
       - [u8_array_to_u256](bytes/alexandria_bytes-utils-u8_array_to_u256.md)
 
@@ -58,21 +78,45 @@
 
       - [bytes::Bytes](bytes/alexandria_bytes-bytes-Bytes.md)
 
+      - [BitArray](bytes/alexandria_bytes-bit_array-BitArray.md)
+
+      - [ByteReaderState](bytes/alexandria_bytes-byte_reader-ByteReaderState.md)
+
       - [bytes::Bytes](bytes/alexandria_bytes-bytes-Bytes.md)
 
     - [Traits](bytes/traits.md)
 
       - [bytes::BytesTrait](bytes/alexandria_bytes-bytes-BytesTrait.md)
 
+      - [BitArrayTrait](bytes/alexandria_bytes-bit_array-BitArrayTrait.md)
+
+      - [ByteAppenderSupportTrait](bytes/alexandria_bytes-byte_appender-ByteAppenderSupportTrait.md)
+
+      - [ByteAppender](bytes/alexandria_bytes-byte_appender-ByteAppender.md)
+
       - [ByteArrayTraitExt](bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExt.md)
 
+      - [ByteReader](bytes/alexandria_bytes-byte_reader-ByteReader.md)
+
       - [bytes::BytesTrait](bytes/alexandria_bytes-bytes-BytesTrait.md)
+
+      - [ReversibleBytes](bytes/alexandria_bytes-reversible-ReversibleBytes.md)
+
+      - [ReversibleBits](bytes/alexandria_bytes-reversible-ReversibleBits.md)
 
     - [Impls](bytes/impls.md)
 
       - [bytes::BytesIndex](bytes/alexandria_bytes-bytes-BytesIndex.md)
 
       - [storage::BytesStore](bytes/alexandria_bytes-storage-BytesStore.md)
+
+      - [SpanU8IntoBytearray](bytes/alexandria_bytes-byte_array_ext-SpanU8IntoBytearray.md)
+
+      - [ByteArrayIntoArrayU8](bytes/alexandria_bytes-byte_array_ext-ByteArrayIntoArrayU8.md)
+
+      - [ByteArrayTraitExtImpl](bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExtImpl.md)
+
+      - [ByteArrayAppenderImpl](bytes/alexandria_bytes-byte_array_ext-ByteArrayAppenderImpl.md)
 
       - [bytes::BytesIndex](bytes/alexandria_bytes-bytes-BytesIndex.md)
 
@@ -178,9 +222,9 @@
 
       - [base64](encoding/alexandria_encoding-base64.md)
 
-      - [reversible](encoding/alexandria_encoding-reversible.md)
-
       - [rlp](encoding/alexandria_encoding-rlp.md)
+
+      - [rlp_byte_array](encoding/alexandria_encoding-rlp_byte_array.md)
 
       - [sol_abi](encoding/alexandria_encoding-sol_abi.md)
 
@@ -200,17 +244,21 @@
 
       - [encode_felt](encoding/alexandria_encoding-base64-encode_felt.md)
 
-      - [reversing](encoding/alexandria_encoding-reversible-reversing.md)
-
-      - [reversing_partial_result](encoding/alexandria_encoding-reversible-reversing_partial_result.md)
+      - [encode_byte_array](encoding/alexandria_encoding-base64-encode_byte_array.md)
 
     - [Enums](encoding/enums.md)
 
-      - [RLPError](encoding/alexandria_encoding-rlp-RLPError.md)
+      - [rlp::RLPError](encoding/alexandria_encoding-rlp-RLPError.md)
 
-      - [RLPType](encoding/alexandria_encoding-rlp-RLPType.md)
+      - [rlp::RLPType](encoding/alexandria_encoding-rlp-RLPType.md)
 
       - [RLPItem](encoding/alexandria_encoding-rlp-RLPItem.md)
+
+      - [rlp_byte_array::RLPError](encoding/alexandria_encoding-rlp_byte_array-RLPError.md)
+
+      - [rlp_byte_array::RLPType](encoding/alexandria_encoding-rlp_byte_array-RLPType.md)
+
+      - [RLPItemByteArray](encoding/alexandria_encoding-rlp_byte_array-RLPItemByteArray.md)
 
     - [Traits](encoding/traits.md)
 
@@ -222,11 +270,13 @@
 
       - [base64::Decoder](encoding/alexandria_encoding-base64-Decoder.md)
 
-      - [ReversibleBytes](encoding/alexandria_encoding-reversible-ReversibleBytes.md)
+      - [ByteArrayEncoder](encoding/alexandria_encoding-base64-ByteArrayEncoder.md)
 
-      - [ReversibleBits](encoding/alexandria_encoding-reversible-ReversibleBits.md)
+      - [ByteArrayDecoder](encoding/alexandria_encoding-base64-ByteArrayDecoder.md)
 
-      - [RLPTrait](encoding/alexandria_encoding-rlp-RLPTrait.md)
+      - [rlp::RLPTrait](encoding/alexandria_encoding-rlp-RLPTrait.md)
+
+      - [rlp_byte_array::RLPTrait](encoding/alexandria_encoding-rlp_byte_array-RLPTrait.md)
 
       - [SolAbiDecodeTrait](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeTrait.md)
 
@@ -252,11 +302,19 @@
 
       - [Base64UrlFeltEncoder](encoding/alexandria_encoding-base64-Base64UrlFeltEncoder.md)
 
+      - [Base64ByteArrayEncoder](encoding/alexandria_encoding-base64-Base64ByteArrayEncoder.md)
+
+      - [Base64ByteArrayUrlEncoder](encoding/alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
+
       - [Base64Decoder](encoding/alexandria_encoding-base64-Base64Decoder.md)
 
       - [Base64UrlDecoder](encoding/alexandria_encoding-base64-Base64UrlDecoder.md)
 
-      - [RLPImpl](encoding/alexandria_encoding-rlp-RLPImpl.md)
+      - [Base64ByteArrayDecoder](encoding/alexandria_encoding-base64-Base64ByteArrayDecoder.md)
+
+      - [rlp::RLPImpl](encoding/alexandria_encoding-rlp-RLPImpl.md)
+
+      - [rlp_byte_array::RLPImpl](encoding/alexandria_encoding-rlp_byte_array-RLPImpl.md)
 
       - [SolAbiDecodeU8](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU8.md)
 
@@ -323,6 +381,14 @@
       - [SolAbiEncodeAsBytes](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsBytes.md)
 
       - [SolAbiEncodeAsByteArray](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsByteArray.md)
+
+
+## evm
+- [evm](evm/SUMMARY.md)
+
+    - [Modules](evm/modules.md)
+
+      - [alexandria_evm](evm/alexandria_evm.md)
 
 
 ## linalg
@@ -675,6 +741,8 @@
       - [Hasher](merkle_tree/alexandria_merkle_tree-merkle_tree-Hasher.md)
 
       - [MerkleTree](merkle_tree/alexandria_merkle_tree-merkle_tree-MerkleTree.md)
+
+      - [StoredMerkleTree](merkle_tree/alexandria_merkle_tree-merkle_tree-StoredMerkleTree.md)
 
       - [BinaryNode](merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNode.md)
 

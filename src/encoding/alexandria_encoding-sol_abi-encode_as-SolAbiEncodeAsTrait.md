@@ -12,6 +12,8 @@ pub trait SolAbiEncodeAsTrait<T>
 
 ### encode_as
 
+Encodes a value of type T into bytes with specified byte size # Arguments * `self` - The Bytes object to append encoded data to * `byteSize` - The number of bytes to use for encoding (must be <= 32) * `x` - The value to encode # Returns * `Bytes` - The original Bytes object with the encoded value appended
+
 Fully qualified path: `alexandria_encoding::sol_abi::encode_as::SolAbiEncodeAsTrait::encode_as`
 
 ```rust
