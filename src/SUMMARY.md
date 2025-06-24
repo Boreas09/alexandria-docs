@@ -1,964 +1,911 @@
-# Alexandria Standard Library
+# Summary
 
+[Introduction](intro.md)
 
-## ascii
-- [ascii](ascii/SUMMARY.md)
+- [Alexandria Ascii](./alexandria_ascii/alexandria_ascii.md)
 
-    - [Modules](ascii/modules.md)
+  - [ToAsciiTrait](./alexandria_ascii/alexandria_ascii-integer-ToAsciiTrait.md)
 
-      - [alexandria_ascii](ascii/alexandria_ascii.md)
+  - [ToAsciiArrayTrait](./alexandria_ascii/alexandria_ascii-integer-ToAsciiArrayTrait.md)
 
-      - [integer](ascii/alexandria_ascii-integer.md)
+- [Alexandria Bytes](./alexandria_bytes/alexandria_bytes_info.md)
 
-    - [Traits](ascii/traits.md)
+  - [Modules](./alexandria_bytes/modules.md)
 
-      - [ToAsciiTrait](ascii/alexandria_ascii-integer-ToAsciiTrait.md)
+    - [alexandria_bytes](./alexandria_bytes/alexandria_bytes.md)
 
-      - [ToAsciiArrayTrait](ascii/alexandria_ascii-integer-ToAsciiArrayTrait.md)
+    - [bit_array](./alexandria_bytes/alexandria_bytes-bit_array.md)
 
+    - [byte_appender](./alexandria_bytes/alexandria_bytes-byte_appender.md)
 
-## bytes
-- [bytes](bytes/SUMMARY.md)
+    - [byte_array_ext](./alexandria_bytes/alexandria_bytes-byte_array_ext.md)
 
-    - [Modules](bytes/modules.md)
+    - [byte_reader](./alexandria_bytes/alexandria_bytes-byte_reader.md)
 
-      - [alexandria_bytes](bytes/alexandria_bytes.md)
+    - [bytes](./alexandria_bytes/alexandria_bytes-bytes.md)
 
-      - [bit_array](bytes/alexandria_bytes-bit_array.md)
+    - [reversible](./alexandria_bytes/alexandria_bytes-reversible.md)
 
-      - [byte_appender](bytes/alexandria_bytes-byte_appender.md)
+    - [storage](./alexandria_bytes/alexandria_bytes-storage.md)
 
-      - [byte_array_ext](bytes/alexandria_bytes-byte_array_ext.md)
+    - [utils](./alexandria_bytes/alexandria_bytes-utils.md)
 
-      - [byte_reader](bytes/alexandria_bytes-byte_reader.md)
+  - [Constants](./alexandria_bytes/constants.md)
 
-      - [bytes](bytes/alexandria_bytes-bytes.md)
+    - [BYTES_PER_ELEMENT](./alexandria_bytes/alexandria_bytes-bytes-BYTES_PER_ELEMENT.md)
 
-      - [reversible](bytes/alexandria_bytes-reversible.md)
+  - [Free functions](./alexandria_bytes/free_functions.md)
 
-      - [storage](bytes/alexandria_bytes-storage.md)
+    - [shift_bit](./alexandria_bytes/alexandria_bytes-bit_array-shift_bit.md)
 
-      - [utils](bytes/alexandria_bytes-utils.md)
+    - [one_shift_left_bytes_felt252](./alexandria_bytes/alexandria_bytes-bit_array-one_shift_left_bytes_felt252.md)
 
-    - [Constants](bytes/constants.md)
+    - [one_shift_left_bytes_u128](./alexandria_bytes/alexandria_bytes-bit_array-one_shift_left_bytes_u128.md)
 
-      - [BYTES_PER_ELEMENT](bytes/alexandria_bytes-bytes-BYTES_PER_ELEMENT.md)
+    - [reversing](./alexandria_bytes/alexandria_bytes-reversible-reversing.md)
 
-    - [Free functions](bytes/free_functions.md)
+    - [reversing_partial_result](./alexandria_bytes/alexandria_bytes-reversible-reversing_partial_result.md)
 
-      - [shift_bit](bytes/alexandria_bytes-bit_array-shift_bit.md)
+    - [keccak_u128s_be](./alexandria_bytes/alexandria_bytes-utils-keccak_u128s_be.md)
 
-      - [one_shift_left_bytes_felt252](bytes/alexandria_bytes-bit_array-one_shift_left_bytes_felt252.md)
+    - [u256_reverse_endian](./alexandria_bytes/alexandria_bytes-utils-u256_reverse_endian.md)
 
-      - [one_shift_left_bytes_u128](bytes/alexandria_bytes-bit_array-one_shift_left_bytes_u128.md)
+    - [u8_array_to_u256](./alexandria_bytes/alexandria_bytes-utils-u8_array_to_u256.md)
 
-      - [reversing](bytes/alexandria_bytes-reversible-reversing.md)
+    - [u32s_to_u256](./alexandria_bytes/alexandria_bytes-utils-u32s_to_u256.md)
 
-      - [reversing_partial_result](bytes/alexandria_bytes-reversible-reversing_partial_result.md)
+    - [u128_array_slice](./alexandria_bytes/alexandria_bytes-utils-u128_array_slice.md)
 
-      - [keccak_u128s_be](bytes/alexandria_bytes-utils-keccak_u128s_be.md)
+    - [u128_split](./alexandria_bytes/alexandria_bytes-utils-u128_split.md)
 
-      - [u256_reverse_endian](bytes/alexandria_bytes-utils-u256_reverse_endian.md)
+    - [read_sub_u128](./alexandria_bytes/alexandria_bytes-utils-read_sub_u128.md)
 
-      - [u8_array_to_u256](bytes/alexandria_bytes-utils-u8_array_to_u256.md)
+    - [u128_join](./alexandria_bytes/alexandria_bytes-utils-u128_join.md)
 
-      - [u32s_to_u256](bytes/alexandria_bytes-utils-u32s_to_u256.md)
+    - [pad_left_data](./alexandria_bytes/alexandria_bytes-utils-pad_left_data.md)
 
-      - [u128_array_slice](bytes/alexandria_bytes-utils-u128_array_slice.md)
+  - [Structs](./alexandria_bytes/structs.md)
 
-      - [u128_split](bytes/alexandria_bytes-utils-u128_split.md)
+    - [bytes::Bytes](./alexandria_bytes/alexandria_bytes-bytes-Bytes.md)
 
-      - [read_sub_u128](bytes/alexandria_bytes-utils-read_sub_u128.md)
+    - [BitArray](./alexandria_bytes/alexandria_bytes-bit_array-BitArray.md)
 
-      - [u128_join](bytes/alexandria_bytes-utils-u128_join.md)
+    - [ByteReaderState](./alexandria_bytes/alexandria_bytes-byte_reader-ByteReaderState.md)
 
-      - [pad_left_data](bytes/alexandria_bytes-utils-pad_left_data.md)
+  - [Traits](./alexandria_bytes/traits.md)
 
-    - [Structs](bytes/structs.md)
+    - [bytes::BytesTrait](./alexandria_bytes/alexandria_bytes-bytes-BytesTrait.md)
 
-      - [bytes::Bytes](bytes/alexandria_bytes-bytes-Bytes.md)
+    - [BitArrayTrait](./alexandria_bytes/alexandria_bytes-bit_array-BitArrayTrait.md)
 
-      - [BitArray](bytes/alexandria_bytes-bit_array-BitArray.md)
+    - [ByteAppenderSupportTrait](./alexandria_bytes/alexandria_bytes-byte_appender-ByteAppenderSupportTrait.md)
 
-      - [ByteReaderState](bytes/alexandria_bytes-byte_reader-ByteReaderState.md)
+    - [ByteAppender](./alexandria_bytes/alexandria_bytes-byte_appender-ByteAppender.md)
 
-      - [bytes::Bytes](bytes/alexandria_bytes-bytes-Bytes.md)
+    - [ByteArrayTraitExt](./alexandria_bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExt.md)
 
-    - [Traits](bytes/traits.md)
+    - [ByteReader](./alexandria_bytes/alexandria_bytes-byte_reader-ByteReader.md)
 
-      - [bytes::BytesTrait](bytes/alexandria_bytes-bytes-BytesTrait.md)
+    - [ReversibleBytes](./alexandria_bytes/alexandria_bytes-reversible-ReversibleBytes.md)
 
-      - [BitArrayTrait](bytes/alexandria_bytes-bit_array-BitArrayTrait.md)
+    - [ReversibleBits](./alexandria_bytes/alexandria_bytes-reversible-ReversibleBits.md)
 
-      - [ByteAppenderSupportTrait](bytes/alexandria_bytes-byte_appender-ByteAppenderSupportTrait.md)
+  - [Impls](./alexandria_bytes/impls.md)
 
-      - [ByteAppender](bytes/alexandria_bytes-byte_appender-ByteAppender.md)
+    - [bytes::BytesIndex](./alexandria_bytes/alexandria_bytes-bytes-BytesIndex.md)
 
-      - [ByteArrayTraitExt](bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExt.md)
+    - [storage::BytesStore](./alexandria_bytes/alexandria_bytes-storage-BytesStore.md)
 
-      - [ByteReader](bytes/alexandria_bytes-byte_reader-ByteReader.md)
+    - [SpanU8IntoBytearray](./alexandria_bytes/alexandria_bytes-byte_array_ext-SpanU8IntoBytearray.md)
 
-      - [bytes::BytesTrait](bytes/alexandria_bytes-bytes-BytesTrait.md)
+    - [ByteArrayIntoArrayU8](./alexandria_bytes/alexandria_bytes-byte_array_ext-ByteArrayIntoArrayU8.md)
 
-      - [ReversibleBytes](bytes/alexandria_bytes-reversible-ReversibleBytes.md)
+    - [ByteArrayTraitExtImpl](./alexandria_bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExtImpl.md)
 
-      - [ReversibleBits](bytes/alexandria_bytes-reversible-ReversibleBits.md)
+    - [ByteArrayAppenderImpl](./alexandria_bytes/alexandria_bytes-byte_array_ext-ByteArrayAppenderImpl.md)
 
-    - [Impls](bytes/impls.md)
+    - [ByteArrayIntoBytes](./alexandria_bytes/alexandria_bytes-bytes-ByteArrayIntoBytes.md)
 
-      - [bytes::BytesIndex](bytes/alexandria_bytes-bytes-BytesIndex.md)
+    - [BytesIntoByteArray](./alexandria_bytes/alexandria_bytes-bytes-BytesIntoByteArray.md)
 
-      - [storage::BytesStore](bytes/alexandria_bytes-storage-BytesStore.md)
+    - [BytesDebug](./alexandria_bytes/alexandria_bytes-utils-BytesDebug.md)
 
-      - [SpanU8IntoBytearray](bytes/alexandria_bytes-byte_array_ext-SpanU8IntoBytearray.md)
+    - [BytesDisplay](./alexandria_bytes/alexandria_bytes-utils-BytesDisplay.md)
 
-      - [ByteArrayIntoArrayU8](bytes/alexandria_bytes-byte_array_ext-ByteArrayIntoArrayU8.md)
+- [Alexandria Encoding](./alexandria_encoding/alexandria_encoding_info.md)
 
-      - [ByteArrayTraitExtImpl](bytes/alexandria_bytes-byte_array_ext-ByteArrayTraitExtImpl.md)
+  - [Modules](./alexandria_encoding/modules.md)
 
-      - [ByteArrayAppenderImpl](bytes/alexandria_bytes-byte_array_ext-ByteArrayAppenderImpl.md)
+    - [alexandria_encoding](./alexandria_encoding/alexandria_encoding.md)
 
-      - [bytes::BytesIndex](bytes/alexandria_bytes-bytes-BytesIndex.md)
+    - [base58](./alexandria_encoding/alexandria_encoding-base58.md)
 
-      - [ByteArrayIntoBytes](bytes/alexandria_bytes-bytes-ByteArrayIntoBytes.md)
+    - [base64](./alexandria_encoding/alexandria_encoding-base64.md)
 
-      - [BytesIntoByteArray](bytes/alexandria_bytes-bytes-BytesIntoByteArray.md)
+    - [rlp](./alexandria_encoding/alexandria_encoding-rlp.md)
 
-      - [storage::BytesStore](bytes/alexandria_bytes-storage-BytesStore.md)
+    - [rlp_byte_array](./alexandria_encoding/alexandria_encoding-rlp_byte_array.md)
 
-      - [BytesDebug](bytes/alexandria_bytes-utils-BytesDebug.md)
+    - [sol_abi](./alexandria_encoding/alexandria_encoding-sol_abi.md)
 
-      - [BytesDisplay](bytes/alexandria_bytes-utils-BytesDisplay.md)
+    - [decode](./alexandria_encoding/alexandria_encoding-sol_abi-decode.md)
 
+    - [encode](./alexandria_encoding/alexandria_encoding-sol_abi-encode.md)
 
-## data_structures
-- [data_structures](data_structures/SUMMARY.md)
+    - [encode_as](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as.md)
 
-    - [Modules](data_structures/modules.md)
+    - [sol_bytes](./alexandria_encoding/alexandria_encoding-sol_abi-sol_bytes.md)
 
-      - [alexandria_data_structures](data_structures/alexandria_data_structures.md)
+  - [Free functions](./alexandria_encoding/free_functions.md)
 
-      - [array_ext](data_structures/alexandria_data_structures-array_ext.md)
+    - [base58::encode_u8_array](./alexandria_encoding/alexandria_encoding-base58-encode_u8_array.md)
 
-      - [bit_array](data_structures/alexandria_data_structures-bit_array.md)
+    - [base64::encode_u8_array](./alexandria_encoding/alexandria_encoding-base64-encode_u8_array.md)
 
-      - [byte_appender](data_structures/alexandria_data_structures-byte_appender.md)
+    - [encode_felt](./alexandria_encoding/alexandria_encoding-base64-encode_felt.md)
 
-      - [byte_array_ext](data_structures/alexandria_data_structures-byte_array_ext.md)
+    - [encode_byte_array](./alexandria_encoding/alexandria_encoding-base64-encode_byte_array.md)
 
-      - [byte_reader](data_structures/alexandria_data_structures-byte_reader.md)
+  - [Enums](./alexandria_encoding/enums.md)
 
-      - [queue](data_structures/alexandria_data_structures-queue.md)
+    - [rlp::RLPError](./alexandria_encoding/alexandria_encoding-rlp-RLPError.md)
 
-      - [span_ext](data_structures/alexandria_data_structures-span_ext.md)
+    - [rlp::RLPType](./alexandria_encoding/alexandria_encoding-rlp-RLPType.md)
 
-      - [stack](data_structures/alexandria_data_structures-stack.md)
+    - [RLPItem](./alexandria_encoding/alexandria_encoding-rlp-RLPItem.md)
 
-      - [vec](data_structures/alexandria_data_structures-vec.md)
+    - [rlp_byte_array::RLPError](./alexandria_encoding/alexandria_encoding-rlp_byte_array-RLPError.md)
 
-    - [Free functions](data_structures/free_functions.md)
+    - [rlp_byte_array::RLPType](./alexandria_encoding/alexandria_encoding-rlp_byte_array-RLPType.md)
 
-      - [shift_bit](data_structures/alexandria_data_structures-bit_array-shift_bit.md)
+    - [RLPItemByteArray](./alexandria_encoding/alexandria_encoding-rlp_byte_array-RLPItemByteArray.md)
 
-      - [one_shift_left_bytes_felt252](data_structures/alexandria_data_structures-bit_array-one_shift_left_bytes_felt252.md)
+  - [Traits](./alexandria_encoding/traits.md)
 
-      - [one_shift_left_bytes_u128](data_structures/alexandria_data_structures-bit_array-one_shift_left_bytes_u128.md)
+    - [base58::Encoder](./alexandria_encoding/alexandria_encoding-base58-Encoder.md)
 
-      - [reversing](data_structures/alexandria_data_structures-byte_appender-reversing.md)
+    - [base58::Decoder](./alexandria_encoding/alexandria_encoding-base58-Decoder.md)
 
-      - [reversing_partial_result](data_structures/alexandria_data_structures-byte_appender-reversing_partial_result.md)
+    - [base64::Encoder](./alexandria_encoding/alexandria_encoding-base64-Encoder.md)
 
-    - [Structs](data_structures/structs.md)
+    - [base64::Decoder](./alexandria_encoding/alexandria_encoding-base64-Decoder.md)
 
-      - [BitArray](data_structures/alexandria_data_structures-bit_array-BitArray.md)
+    - [ByteArrayEncoder](./alexandria_encoding/alexandria_encoding-base64-ByteArrayEncoder.md)
 
-      - [ByteReaderState](data_structures/alexandria_data_structures-byte_reader-ByteReaderState.md)
+    - [ByteArrayDecoder](./alexandria_encoding/alexandria_encoding-base64-ByteArrayDecoder.md)
 
-      - [Queue](data_structures/alexandria_data_structures-queue-Queue.md)
+    - [rlp::RLPTrait](./alexandria_encoding/alexandria_encoding-rlp-RLPTrait.md)
 
-      - [Felt252Stack](data_structures/alexandria_data_structures-stack-Felt252Stack.md)
+    - [rlp_byte_array::RLPTrait](./alexandria_encoding/alexandria_encoding-rlp_byte_array-RLPTrait.md)
 
-      - [NullableStack](data_structures/alexandria_data_structures-stack-NullableStack.md)
+    - [SolAbiDecodeTrait](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeTrait.md)
 
-      - [Felt252Vec](data_structures/alexandria_data_structures-vec-Felt252Vec.md)
+    - [SolAbiEncodeSelectorTrait](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeSelectorTrait.md)
 
-      - [NullableVec](data_structures/alexandria_data_structures-vec-NullableVec.md)
+    - [SolAbiEncodeTrait](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeTrait.md)
 
-    - [Traits](data_structures/traits.md)
+    - [SolAbiEncodeAsTrait](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsTrait.md)
 
-      - [ArrayTraitExt](data_structures/alexandria_data_structures-array_ext-ArrayTraitExt.md)
+    - [SolBytesTrait](./alexandria_encoding/alexandria_encoding-sol_abi-sol_bytes-SolBytesTrait.md)
 
-      - [BitArrayTrait](data_structures/alexandria_data_structures-bit_array-BitArrayTrait.md)
+  - [Impls](./alexandria_encoding/impls.md)
 
-      - [ByteAppenderSupportTrait](data_structures/alexandria_data_structures-byte_appender-ByteAppenderSupportTrait.md)
+    - [Base58Encoder](./alexandria_encoding/alexandria_encoding-base58-Base58Encoder.md)
 
-      - [ByteAppender](data_structures/alexandria_data_structures-byte_appender-ByteAppender.md)
+    - [Base58Decoder](./alexandria_encoding/alexandria_encoding-base58-Base58Decoder.md)
 
-      - [ByteReader](data_structures/alexandria_data_structures-byte_reader-ByteReader.md)
+    - [Base64Encoder](./alexandria_encoding/alexandria_encoding-base64-Base64Encoder.md)
 
-      - [QueueTrait](data_structures/alexandria_data_structures-queue-QueueTrait.md)
+    - [Base64UrlEncoder](./alexandria_encoding/alexandria_encoding-base64-Base64UrlEncoder.md)
 
-      - [SpanTraitExt](data_structures/alexandria_data_structures-span_ext-SpanTraitExt.md)
+    - [Base64FeltEncoder](./alexandria_encoding/alexandria_encoding-base64-Base64FeltEncoder.md)
 
-      - [StackTrait](data_structures/alexandria_data_structures-stack-StackTrait.md)
+    - [Base64UrlFeltEncoder](./alexandria_encoding/alexandria_encoding-base64-Base64UrlFeltEncoder.md)
 
-      - [VecTrait](data_structures/alexandria_data_structures-vec-VecTrait.md)
+    - [Base64ByteArrayEncoder](./alexandria_encoding/alexandria_encoding-base64-Base64ByteArrayEncoder.md)
 
-    - [Impls](data_structures/impls.md)
+    - [Base64ByteArrayUrlEncoder](./alexandria_encoding/alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
 
-      - [SpanU8IntoBytearray](data_structures/alexandria_data_structures-byte_array_ext-SpanU8IntoBytearray.md)
+    - [Base64Decoder](./alexandria_encoding/alexandria_encoding-base64-Base64Decoder.md)
 
-      - [ByteArrayIntoArrayU8](data_structures/alexandria_data_structures-byte_array_ext-ByteArrayIntoArrayU8.md)
+    - [Base64UrlDecoder](./alexandria_encoding/alexandria_encoding-base64-Base64UrlDecoder.md)
 
+    - [Base64ByteArrayDecoder](./alexandria_encoding/alexandria_encoding-base64-Base64ByteArrayDecoder.md)
 
-## encoding
-- [encoding](encoding/SUMMARY.md)
+    - [rlp::RLPImpl](./alexandria_encoding/alexandria_encoding-rlp-RLPImpl.md)
 
-    - [Modules](encoding/modules.md)
+    - [rlp_byte_array::RLPImpl](./alexandria_encoding/alexandria_encoding-rlp_byte_array-RLPImpl.md)
 
-      - [alexandria_encoding](encoding/alexandria_encoding.md)
+    - [SolAbiDecodeU8](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU8.md)
 
-      - [base58](encoding/alexandria_encoding-base58.md)
+    - [SolAbiDecodeU16](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU16.md)
 
-      - [base64](encoding/alexandria_encoding-base64.md)
+    - [SolAbiDecodeU32](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU32.md)
 
-      - [rlp](encoding/alexandria_encoding-rlp.md)
+    - [SolAbiDecodeU64](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU64.md)
 
-      - [rlp_byte_array](encoding/alexandria_encoding-rlp_byte_array.md)
+    - [SolAbiDecodeU128](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU128.md)
 
-      - [sol_abi](encoding/alexandria_encoding-sol_abi.md)
+    - [SolAbiDecodeU256](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU256.md)
 
-      - [decode](encoding/alexandria_encoding-sol_abi-decode.md)
+    - [SolAbiDecodeBool](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBool.md)
 
-      - [encode](encoding/alexandria_encoding-sol_abi-encode.md)
+    - [SolAbiDecodeFelt252](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeFelt252.md)
 
-      - [encode_as](encoding/alexandria_encoding-sol_abi-encode_as.md)
+    - [SolAbiDecodeBytes31](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBytes31.md)
 
-      - [sol_bytes](encoding/alexandria_encoding-sol_abi-sol_bytes.md)
+    - [SolAbiDecodeBytes](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBytes.md)
 
-    - [Free functions](encoding/free_functions.md)
+    - [SolAbiDecodeByteArray](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeByteArray.md)
 
-      - [base58::encode_u8_array](encoding/alexandria_encoding-base58-encode_u8_array.md)
+    - [SolAbiDecodeStarknetAddress](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeStarknetAddress.md)
 
-      - [base64::encode_u8_array](encoding/alexandria_encoding-base64-encode_u8_array.md)
+    - [SolAbiDecodeEthAddress](./alexandria_encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeEthAddress.md)
 
-      - [encode_felt](encoding/alexandria_encoding-base64-encode_felt.md)
+    - [SolAbiEncodeSelector](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeSelector.md)
 
-      - [encode_byte_array](encoding/alexandria_encoding-base64-encode_byte_array.md)
+    - [SolAbiEncodeU8](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU8.md)
 
-    - [Enums](encoding/enums.md)
+    - [SolAbiEncodeU16](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU16.md)
 
-      - [rlp::RLPError](encoding/alexandria_encoding-rlp-RLPError.md)
+    - [SolAbiEncodeU32](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU32.md)
 
-      - [rlp::RLPType](encoding/alexandria_encoding-rlp-RLPType.md)
+    - [SolAbiEncodeU64](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU64.md)
 
-      - [RLPItem](encoding/alexandria_encoding-rlp-RLPItem.md)
+    - [SolAbiEncodeU128](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU128.md)
 
-      - [rlp_byte_array::RLPError](encoding/alexandria_encoding-rlp_byte_array-RLPError.md)
+    - [SolAbiEncodeU256](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU256.md)
 
-      - [rlp_byte_array::RLPType](encoding/alexandria_encoding-rlp_byte_array-RLPType.md)
+    - [SolAbiEncodeBool](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBool.md)
 
-      - [RLPItemByteArray](encoding/alexandria_encoding-rlp_byte_array-RLPItemByteArray.md)
+    - [SolAbiEncodeFelt252](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeFelt252.md)
 
-    - [Traits](encoding/traits.md)
+    - [SolAbiEncodeBytes31](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBytes31.md)
 
-      - [base58::Encoder](encoding/alexandria_encoding-base58-Encoder.md)
+    - [SolAbiEncodeBytes](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBytes.md)
 
-      - [base58::Decoder](encoding/alexandria_encoding-base58-Decoder.md)
+    - [SolAbiEncodeByteArray](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeByteArray.md)
 
-      - [base64::Encoder](encoding/alexandria_encoding-base64-Encoder.md)
+    - [SolAbiEncodeStarknetAddress](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeStarknetAddress.md)
 
-      - [base64::Decoder](encoding/alexandria_encoding-base64-Decoder.md)
+    - [SolAbiEncodeEthAddress](./alexandria_encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeEthAddress.md)
 
-      - [ByteArrayEncoder](encoding/alexandria_encoding-base64-ByteArrayEncoder.md)
+    - [SolAbiEncodeAsU256](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsU256.md)
 
-      - [ByteArrayDecoder](encoding/alexandria_encoding-base64-ByteArrayDecoder.md)
+    - [SolAbiEncodeAsU128](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsU128.md)
 
-      - [rlp::RLPTrait](encoding/alexandria_encoding-rlp-RLPTrait.md)
+    - [SolAbiEncodeAsFelt252](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsFelt252.md)
 
-      - [rlp_byte_array::RLPTrait](encoding/alexandria_encoding-rlp_byte_array-RLPTrait.md)
+    - [SolAbiEncodeAsBytes31](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsBytes31.md)
 
-      - [SolAbiDecodeTrait](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeTrait.md)
+    - [SolAbiEncodeAsBytes](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsBytes.md)
 
-      - [SolAbiEncodeSelectorTrait](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeSelectorTrait.md)
+    - [SolAbiEncodeAsByteArray](./alexandria_encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsByteArray.md)
 
-      - [SolAbiEncodeTrait](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeTrait.md)
+- [Alexandria Data Structures](./alexandria_data_structures/alexandria_data_structures_info.md)
 
-      - [SolAbiEncodeAsTrait](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsTrait.md)
+  - [Modules](./alexandria_data_structures/modules.md)
 
-      - [SolBytesTrait](encoding/alexandria_encoding-sol_abi-sol_bytes-SolBytesTrait.md)
+    - [alexandria_data_structures](./alexandria_data_structures/alexandria_data_structures.md)
 
-    - [Impls](encoding/impls.md)
+    - [array_ext](./alexandria_data_structures/alexandria_data_structures-array_ext.md)
 
-      - [Base58Encoder](encoding/alexandria_encoding-base58-Base58Encoder.md)
+    - [bit_array](./alexandria_data_structures/alexandria_data_structures-bit_array.md)
 
-      - [Base58Decoder](encoding/alexandria_encoding-base58-Base58Decoder.md)
+    - [byte_appender](./alexandria_data_structures/alexandria_data_structures-byte_appender.md)
 
-      - [Base64Encoder](encoding/alexandria_encoding-base64-Base64Encoder.md)
+    - [byte_array_ext](./alexandria_data_structures/alexandria_data_structures-byte_array_ext.md)
 
-      - [Base64UrlEncoder](encoding/alexandria_encoding-base64-Base64UrlEncoder.md)
+    - [byte_reader](./alexandria_data_structures/alexandria_data_structures-byte_reader.md)
 
-      - [Base64FeltEncoder](encoding/alexandria_encoding-base64-Base64FeltEncoder.md)
+    - [queue](./alexandria_data_structures/alexandria_data_structures-queue.md)
 
-      - [Base64UrlFeltEncoder](encoding/alexandria_encoding-base64-Base64UrlFeltEncoder.md)
+    - [span_ext](./alexandria_data_structures/alexandria_data_structures-span_ext.md)
 
-      - [Base64ByteArrayEncoder](encoding/alexandria_encoding-base64-Base64ByteArrayEncoder.md)
+    - [stack](./alexandria_data_structures/alexandria_data_structures-stack.md)
 
-      - [Base64ByteArrayUrlEncoder](encoding/alexandria_encoding-base64-Base64ByteArrayUrlEncoder.md)
+    - [vec](./alexandria_data_structures/alexandria_data_structures-vec.md)
 
-      - [Base64Decoder](encoding/alexandria_encoding-base64-Base64Decoder.md)
+  - [Free functions](./alexandria_data_structures/free_functions.md)
 
-      - [Base64UrlDecoder](encoding/alexandria_encoding-base64-Base64UrlDecoder.md)
+    - [shift_bit](./alexandria_data_structures/alexandria_data_structures-bit_array-shift_bit.md)
 
-      - [Base64ByteArrayDecoder](encoding/alexandria_encoding-base64-Base64ByteArrayDecoder.md)
+    - [one_shift_left_bytes_felt252](./alexandria_data_structures/alexandria_data_structures-bit_array-one_shift_left_bytes_felt252.md)
 
-      - [rlp::RLPImpl](encoding/alexandria_encoding-rlp-RLPImpl.md)
+    - [one_shift_left_bytes_u128](./alexandria_data_structures/alexandria_data_structures-bit_array-one_shift_left_bytes_u128.md)
 
-      - [rlp_byte_array::RLPImpl](encoding/alexandria_encoding-rlp_byte_array-RLPImpl.md)
+    - [reversing](./alexandria_data_structures/alexandria_data_structures-byte_appender-reversing.md)
 
-      - [SolAbiDecodeU8](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU8.md)
+    - [reversing_partial_result](./alexandria_data_structures/alexandria_data_structures-byte_appender-reversing_partial_result.md)
 
-      - [SolAbiDecodeU16](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU16.md)
+  - [Structs](./alexandria_data_structures/structs.md)
 
-      - [SolAbiDecodeU32](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU32.md)
+    - [BitArray](./alexandria_data_structures/alexandria_data_structures-bit_array-BitArray.md)
 
-      - [SolAbiDecodeU64](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU64.md)
+    - [ByteReaderState](./alexandria_data_structures/alexandria_data_structures-byte_reader-ByteReaderState.md)
 
-      - [SolAbiDecodeU128](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU128.md)
+    - [Queue](./alexandria_data_structures/alexandria_data_structures-queue-Queue.md)
 
-      - [SolAbiDecodeU256](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeU256.md)
+    - [Felt252Stack](./alexandria_data_structures/alexandria_data_structures-stack-Felt252Stack.md)
 
-      - [SolAbiDecodeBool](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBool.md)
+    - [NullableStack](./alexandria_data_structures/alexandria_data_structures-stack-NullableStack.md)
 
-      - [SolAbiDecodeFelt252](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeFelt252.md)
+    - [Felt252Vec](./alexandria_data_structures/alexandria_data_structures-vec-Felt252Vec.md)
 
-      - [SolAbiDecodeBytes31](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBytes31.md)
+    - [NullableVec](./alexandria_data_structures/alexandria_data_structures-vec-NullableVec.md)
 
-      - [SolAbiDecodeBytes](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeBytes.md)
+  - [Traits](./alexandria_data_structures/traits.md)
 
-      - [SolAbiDecodeByteArray](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeByteArray.md)
+    - [ArrayTraitExt](./alexandria_data_structures/alexandria_data_structures-array_ext-ArrayTraitExt.md)
 
-      - [SolAbiDecodeStarknetAddress](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeStarknetAddress.md)
+    - [BitArrayTrait](./alexandria_data_structures/alexandria_data_structures-bit_array-BitArrayTrait.md)
 
-      - [SolAbiDecodeEthAddress](encoding/alexandria_encoding-sol_abi-decode-SolAbiDecodeEthAddress.md)
+    - [ByteAppenderSupportTrait](./alexandria_data_structures/alexandria_data_structures-byte_appender-ByteAppenderSupportTrait.md)
 
-      - [SolAbiEncodeSelector](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeSelector.md)
+    - [ByteAppender](./alexandria_data_structures/alexandria_data_structures-byte_appender-ByteAppender.md)
 
-      - [SolAbiEncodeU8](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU8.md)
+    - [ByteReader](./alexandria_data_structures/alexandria_data_structures-byte_reader-ByteReader.md)
 
-      - [SolAbiEncodeU16](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU16.md)
+    - [QueueTrait](./alexandria_data_structures/alexandria_data_structures-queue-QueueTrait.md)
 
-      - [SolAbiEncodeU32](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU32.md)
+    - [SpanTraitExt](./alexandria_data_structures/alexandria_data_structures-span_ext-SpanTraitExt.md)
 
-      - [SolAbiEncodeU64](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU64.md)
+    - [StackTrait](./alexandria_data_structures/alexandria_data_structures-stack-StackTrait.md)
 
-      - [SolAbiEncodeU128](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU128.md)
+    - [VecTrait](./alexandria_data_structures/alexandria_data_structures-vec-VecTrait.md)
 
-      - [SolAbiEncodeU256](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeU256.md)
+  - [Impls](./alexandria_data_structures/impls.md)
 
-      - [SolAbiEncodeBool](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBool.md)
+    - [SpanU8IntoBytearray](./alexandria_data_structures/alexandria_data_structures-byte_array_ext-SpanU8IntoBytearray.md)
 
-      - [SolAbiEncodeFelt252](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeFelt252.md)
+    - [ByteArrayIntoArrayU8](./alexandria_data_structures/alexandria_data_structures-byte_array_ext-ByteArrayIntoArrayU8.md)
 
-      - [SolAbiEncodeBytes31](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBytes31.md)
+- [Alexandria Evm](./alexandria_evm/alexandria_evm_info.md)
 
-      - [SolAbiEncodeBytes](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeBytes.md)
+  - [Modules](./alexandria_evm/modules.md)
 
-      - [SolAbiEncodeByteArray](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeByteArray.md)
+    - [alexandria_evm](./alexandria_evm/alexandria_evm.md)
 
-      - [SolAbiEncodeStarknetAddress](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeStarknetAddress.md)
+- [Alexandria Linalg](./alexandria_linalg/alexandria_linalg_info.md)
 
-      - [SolAbiEncodeEthAddress](encoding/alexandria_encoding-sol_abi-encode-SolAbiEncodeEthAddress.md)
+  - [Modules](./alexandria_linalg/modules.md)
 
-      - [SolAbiEncodeAsU256](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsU256.md)
+    - [alexandria_linalg](./alexandria_linalg/alexandria_linalg.md)
 
-      - [SolAbiEncodeAsU128](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsU128.md)
+    - [dot](./alexandria_linalg/alexandria_linalg-dot.md)
 
-      - [SolAbiEncodeAsFelt252](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsFelt252.md)
+    - [kron](./alexandria_linalg/alexandria_linalg-kron.md)
 
-      - [SolAbiEncodeAsBytes31](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsBytes31.md)
+    - [norm](./alexandria_linalg/alexandria_linalg-norm.md)
 
-      - [SolAbiEncodeAsBytes](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsBytes.md)
+  - [Free functions](./alexandria_linalg/free_functions.md)
 
-      - [SolAbiEncodeAsByteArray](encoding/alexandria_encoding-sol_abi-encode_as-SolAbiEncodeAsByteArray.md)
+    - [dot](./alexandria_linalg/alexandria_linalg-dot-dot.md)
 
+    - [kron](./alexandria_linalg/alexandria_linalg-kron-kron.md)
 
-## evm
-- [evm](evm/SUMMARY.md)
+    - [norm](./alexandria_linalg/alexandria_linalg-norm-norm.md)
 
-    - [Modules](evm/modules.md)
+  - [Enums](./alexandria_linalg/enums.md)
 
-      - [alexandria_evm](evm/alexandria_evm.md)
+    - [KronError](./alexandria_linalg/alexandria_linalg-kron-KronError.md)
 
+- [Alexandria Math](./alexandria_math/alexandria_math_info.md)
 
-## linalg
-- [linalg](linalg/SUMMARY.md)
+  - [Modules](./alexandria_math/modules.md)
 
-    - [Modules](linalg/modules.md)
+    - [alexandria_math](./alexandria_math/alexandria_math.md)
 
-      - [alexandria_linalg](linalg/alexandria_linalg.md)
+    - [aliquot_sum](./alexandria_math/alexandria_math-aliquot_sum.md)
 
-      - [dot](linalg/alexandria_linalg-dot.md)
+    - [armstrong_number](./alexandria_math/alexandria_math-armstrong_number.md)
 
-      - [kron](linalg/alexandria_linalg-kron.md)
+    - [bip340](./alexandria_math/alexandria_math-bip340.md)
 
-      - [norm](linalg/alexandria_linalg-norm.md)
+    - [bitmap](./alexandria_math/alexandria_math-bitmap.md)
 
-    - [Free functions](linalg/free_functions.md)
+    - [collatz_sequence](./alexandria_math/alexandria_math-collatz_sequence.md)
 
-      - [dot](linalg/alexandria_linalg-dot-dot.md)
+    - [const_pow](./alexandria_math/alexandria_math-const_pow.md)
 
-      - [kron](linalg/alexandria_linalg-kron-kron.md)
+    - [ed25519](./alexandria_math/alexandria_math-ed25519.md)
 
-      - [norm](linalg/alexandria_linalg-norm-norm.md)
+    - [extended_euclidean_algorithm](./alexandria_math/alexandria_math-extended_euclidean_algorithm.md)
 
-    - [Enums](linalg/enums.md)
+    - [fast_power](./alexandria_math/alexandria_math-fast_power.md)
 
-      - [KronError](linalg/alexandria_linalg-kron-KronError.md)
+    - [fast_root](./alexandria_math/alexandria_math-fast_root.md)
 
+    - [fibonacci](./alexandria_math/alexandria_math-fibonacci.md)
 
-## math
-- [math](math/SUMMARY.md)
+    - [gcd_of_n_numbers](./alexandria_math/alexandria_math-gcd_of_n_numbers.md)
 
-    - [Modules](math/modules.md)
+    - [i257](./alexandria_math/alexandria_math-i257.md)
 
-      - [alexandria_math](math/alexandria_math.md)
+    - [is_power_of_two](./alexandria_math/alexandria_math-is_power_of_two.md)
 
-      - [aliquot_sum](math/alexandria_math-aliquot_sum.md)
+    - [is_prime](./alexandria_math/alexandria_math-is_prime.md)
 
-      - [armstrong_number](math/alexandria_math-armstrong_number.md)
+    - [karatsuba](./alexandria_math/alexandria_math-karatsuba.md)
 
-      - [bip340](math/alexandria_math-bip340.md)
+    - [keccak256](./alexandria_math/alexandria_math-keccak256.md)
 
-      - [bitmap](math/alexandria_math-bitmap.md)
+    - [lcm_of_n_numbers](./alexandria_math/alexandria_math-lcm_of_n_numbers.md)
 
-      - [collatz_sequence](math/alexandria_math-collatz_sequence.md)
+    - [mod_arithmetics](./alexandria_math/alexandria_math-mod_arithmetics.md)
 
-      - [const_pow](math/alexandria_math-const_pow.md)
+    - [perfect_number](./alexandria_math/alexandria_math-perfect_number.md)
 
-      - [ed25519](math/alexandria_math-ed25519.md)
+    - [sha256](./alexandria_math/alexandria_math-sha256.md)
 
-      - [extended_euclidean_algorithm](math/alexandria_math-extended_euclidean_algorithm.md)
+    - [sha512](./alexandria_math/alexandria_math-sha512.md)
 
-      - [fast_power](math/alexandria_math-fast_power.md)
+    - [trigonometry](./alexandria_math/alexandria_math-trigonometry.md)
 
-      - [fast_root](math/alexandria_math-fast_root.md)
+    - [u512_arithmetics](./alexandria_math/alexandria_math-u512_arithmetics.md)
 
-      - [fibonacci](math/alexandria_math-fibonacci.md)
+    - [wad_ray_math](./alexandria_math/alexandria_math-wad_ray_math.md)
 
-      - [gcd_of_n_numbers](math/alexandria_math-gcd_of_n_numbers.md)
+    - [zellers_congruence](./alexandria_math/alexandria_math-zellers_congruence.md)
 
-      - [i257](math/alexandria_math-i257.md)
+  - [Constants](./alexandria_math/constants.md)
 
-      - [is_power_of_two](math/alexandria_math-is_power_of_two.md)
+    - [p](./alexandria_math/alexandria_math-ed25519-p.md)
 
-      - [is_prime](math/alexandria_math-is_prime.md)
+    - [p_non_zero](./alexandria_math/alexandria_math-ed25519-p_non_zero.md)
 
-      - [karatsuba](math/alexandria_math-karatsuba.md)
+    - [p2x](./alexandria_math/alexandria_math-ed25519-p2x.md)
 
-      - [keccak256](math/alexandria_math-keccak256.md)
+    - [a](./alexandria_math/alexandria_math-ed25519-a.md)
 
-      - [lcm_of_n_numbers](math/alexandria_math-lcm_of_n_numbers.md)
+    - [c](./alexandria_math/alexandria_math-ed25519-c.md)
 
-      - [mod_arithmetics](math/alexandria_math-mod_arithmetics.md)
+    - [d](./alexandria_math/alexandria_math-ed25519-d.md)
 
-      - [perfect_number](math/alexandria_math-perfect_number.md)
+    - [d2x](./alexandria_math/alexandria_math-ed25519-d2x.md)
 
-      - [sha256](math/alexandria_math-sha256.md)
+    - [l](./alexandria_math/alexandria_math-ed25519-l.md)
 
-      - [sha512](math/alexandria_math-sha512.md)
+    - [w](./alexandria_math/alexandria_math-ed25519-w.md)
 
-      - [trigonometry](math/alexandria_math-trigonometry.md)
+    - [SHA512_LEN](./alexandria_math/alexandria_math-sha512-SHA512_LEN.md)
 
-      - [u512_arithmetics](math/alexandria_math-u512_arithmetics.md)
+    - [U64_BIT_NUM](./alexandria_math/alexandria_math-sha512-U64_BIT_NUM.md)
 
-      - [wad_ray_math](math/alexandria_math-wad_ray_math.md)
+    - [TWO_POW_56](./alexandria_math/alexandria_math-sha512-TWO_POW_56.md)
 
-      - [zellers_congruence](math/alexandria_math-zellers_congruence.md)
+    - [TWO_POW_48](./alexandria_math/alexandria_math-sha512-TWO_POW_48.md)
 
-    - [Constants](math/constants.md)
+    - [TWO_POW_40](./alexandria_math/alexandria_math-sha512-TWO_POW_40.md)
 
-      - [p](math/alexandria_math-ed25519-p.md)
+    - [TWO_POW_32](./alexandria_math/alexandria_math-sha512-TWO_POW_32.md)
 
-      - [p_non_zero](math/alexandria_math-ed25519-p_non_zero.md)
+    - [TWO_POW_24](./alexandria_math/alexandria_math-sha512-TWO_POW_24.md)
 
-      - [p2x](math/alexandria_math-ed25519-p2x.md)
+    - [TWO_POW_16](./alexandria_math/alexandria_math-sha512-TWO_POW_16.md)
 
-      - [a](math/alexandria_math-ed25519-a.md)
+    - [TWO_POW_8](./alexandria_math/alexandria_math-sha512-TWO_POW_8.md)
 
-      - [c](math/alexandria_math-ed25519-c.md)
+    - [TWO_POW_4](./alexandria_math/alexandria_math-sha512-TWO_POW_4.md)
 
-      - [d](math/alexandria_math-ed25519-d.md)
+    - [TWO_POW_2](./alexandria_math/alexandria_math-sha512-TWO_POW_2.md)
 
-      - [d2x](math/alexandria_math-ed25519-d2x.md)
+    - [TWO_POW_1](./alexandria_math/alexandria_math-sha512-TWO_POW_1.md)
 
-      - [l](math/alexandria_math-ed25519-l.md)
+    - [TWO_POW_0](./alexandria_math/alexandria_math-sha512-TWO_POW_0.md)
 
-      - [w](math/alexandria_math-ed25519-w.md)
+    - [MAX_U8](./alexandria_math/alexandria_math-sha512-MAX_U8.md)
 
-      - [SHA512_LEN](math/alexandria_math-sha512-SHA512_LEN.md)
+    - [MAX_U64](./alexandria_math/alexandria_math-sha512-MAX_U64.md)
 
-      - [U64_BIT_NUM](math/alexandria_math-sha512-U64_BIT_NUM.md)
+  - [Free functions](./alexandria_math/free_functions.md)
 
-      - [TWO_POW_56](math/alexandria_math-sha512-TWO_POW_56.md)
+    - [pow](./alexandria_math/alexandria_math-pow.md)
 
-      - [TWO_POW_48](math/alexandria_math-sha512-TWO_POW_48.md)
+    - [aliquot_sum](./alexandria_math/alexandria_math-aliquot_sum-aliquot_sum.md)
 
-      - [TWO_POW_40](math/alexandria_math-sha512-TWO_POW_40.md)
+    - [is_armstrong_number](./alexandria_math/alexandria_math-armstrong_number-is_armstrong_number.md)
 
-      - [TWO_POW_32](math/alexandria_math-sha512-TWO_POW_32.md)
+    - [verify](./alexandria_math/alexandria_math-bip340-verify.md)
 
-      - [TWO_POW_24](math/alexandria_math-sha512-TWO_POW_24.md)
+    - [sequence](./alexandria_math/alexandria_math-collatz_sequence-sequence.md)
 
-      - [TWO_POW_16](math/alexandria_math-sha512-TWO_POW_16.md)
+    - [pow2_u256](./alexandria_math/alexandria_math-const_pow-pow2_u256.md)
 
-      - [TWO_POW_8](math/alexandria_math-sha512-TWO_POW_8.md)
+    - [pow2](./alexandria_math/alexandria_math-const_pow-pow2.md)
 
-      - [TWO_POW_4](math/alexandria_math-sha512-TWO_POW_4.md)
+    - [pow2_felt252](./alexandria_math/alexandria_math-const_pow-pow2_felt252.md)
 
-      - [TWO_POW_2](math/alexandria_math-sha512-TWO_POW_2.md)
+    - [pow10](./alexandria_math/alexandria_math-const_pow-pow10.md)
 
-      - [TWO_POW_1](math/alexandria_math-sha512-TWO_POW_1.md)
+    - [pow10_u256](./alexandria_math/alexandria_math-const_pow-pow10_u256.md)
 
-      - [TWO_POW_0](math/alexandria_math-sha512-TWO_POW_0.md)
+    - [point_mult_double_and_add](./alexandria_math/alexandria_math-ed25519-point_mult_double_and_add.md)
 
-      - [MAX_U8](math/alexandria_math-sha512-MAX_U8.md)
+    - [verify_signature](./alexandria_math/alexandria_math-ed25519-verify_signature.md)
 
-      - [MAX_U64](math/alexandria_math-sha512-MAX_U64.md)
+    - [extended_euclidean_algorithm](./alexandria_math/alexandria_math-extended_euclidean_algorithm-extended_euclidean_algorithm.md)
 
-    - [Free functions](math/free_functions.md)
+    - [fast_power](./alexandria_math/alexandria_math-fast_power-fast_power.md)
 
-      - [pow](math/alexandria_math-pow.md)
+    - [fast_power_mod](./alexandria_math/alexandria_math-fast_power-fast_power_mod.md)
 
-      - [aliquot_sum](math/alexandria_math-aliquot_sum-aliquot_sum.md)
+    - [fast_nr_optimize](./alexandria_math/alexandria_math-fast_root-fast_nr_optimize.md)
 
-      - [is_armstrong_number](math/alexandria_math-armstrong_number-is_armstrong_number.md)
+    - [fast_sqrt](./alexandria_math/alexandria_math-fast_root-fast_sqrt.md)
 
-      - [verify](math/alexandria_math-bip340-verify.md)
+    - [fast_cbrt](./alexandria_math/alexandria_math-fast_root-fast_cbrt.md)
 
-      - [sequence](math/alexandria_math-collatz_sequence-sequence.md)
+    - [round_div](./alexandria_math/alexandria_math-fast_root-round_div.md)
 
-      - [pow2_u256](math/alexandria_math-const_pow-pow2_u256.md)
+    - [fib](./alexandria_math/alexandria_math-fibonacci-fib.md)
 
-      - [pow2](math/alexandria_math-const_pow-pow2.md)
+    - [gcd](./alexandria_math/alexandria_math-gcd_of_n_numbers-gcd.md)
 
-      - [pow2_felt252](math/alexandria_math-const_pow-pow2_felt252.md)
+    - [gcd_two_numbers](./alexandria_math/alexandria_math-gcd_of_n_numbers-gcd_two_numbers.md)
 
-      - [pow10](math/alexandria_math-const_pow-pow10.md)
+    - [i257_div_rem](./alexandria_math/alexandria_math-i257-i257_div_rem.md)
 
-      - [pow10_u256](math/alexandria_math-const_pow-pow10_u256.md)
+    - [i257_assert_no_negative_zero](./alexandria_math/alexandria_math-i257-i257_assert_no_negative_zero.md)
 
-      - [point_mult_double_and_add](math/alexandria_math-ed25519-point_mult_double_and_add.md)
+    - [is_power_of_two](./alexandria_math/alexandria_math-is_power_of_two-is_power_of_two.md)
 
-      - [verify_signature](math/alexandria_math-ed25519-verify_signature.md)
+    - [is_prime](./alexandria_math/alexandria_math-is_prime-is_prime.md)
 
-      - [extended_euclidean_algorithm](math/alexandria_math-extended_euclidean_algorithm-extended_euclidean_algorithm.md)
+    - [multiply](./alexandria_math/alexandria_math-karatsuba-multiply.md)
 
-      - [fast_power](math/alexandria_math-fast_power-fast_power.md)
+    - [keccak256](./alexandria_math/alexandria_math-keccak256-keccak256.md)
 
-      - [fast_power_mod](math/alexandria_math-fast_power-fast_power_mod.md)
+    - [lcm](./alexandria_math/alexandria_math-lcm_of_n_numbers-lcm.md)
 
-      - [fast_nr_optimize](math/alexandria_math-fast_root-fast_nr_optimize.md)
+    - [add_mod](./alexandria_math/alexandria_math-mod_arithmetics-add_mod.md)
 
-      - [fast_sqrt](math/alexandria_math-fast_root-fast_sqrt.md)
+    - [mult_inverse](./alexandria_math/alexandria_math-mod_arithmetics-mult_inverse.md)
 
-      - [fast_cbrt](math/alexandria_math-fast_root-fast_cbrt.md)
+    - [add_inverse_mod](./alexandria_math/alexandria_math-mod_arithmetics-add_inverse_mod.md)
 
-      - [round_div](math/alexandria_math-fast_root-round_div.md)
+    - [sub_mod](./alexandria_math/alexandria_math-mod_arithmetics-sub_mod.md)
 
-      - [fib](math/alexandria_math-fibonacci-fib.md)
+    - [mult_mod](./alexandria_math/alexandria_math-mod_arithmetics-mult_mod.md)
 
-      - [gcd](math/alexandria_math-gcd_of_n_numbers-gcd.md)
+    - [u256_wide_sqr](./alexandria_math/alexandria_math-mod_arithmetics-u256_wide_sqr.md)
 
-      - [gcd_two_numbers](math/alexandria_math-gcd_of_n_numbers-gcd_two_numbers.md)
+    - [sqr_mod](./alexandria_math/alexandria_math-mod_arithmetics-sqr_mod.md)
 
-      - [i257_div_rem](math/alexandria_math-i257-i257_div_rem.md)
+    - [div_mod](./alexandria_math/alexandria_math-mod_arithmetics-div_mod.md)
 
-      - [i257_assert_no_negative_zero](math/alexandria_math-i257-i257_assert_no_negative_zero.md)
+    - [pow_mod](./alexandria_math/alexandria_math-mod_arithmetics-pow_mod.md)
 
-      - [is_power_of_two](math/alexandria_math-is_power_of_two-is_power_of_two.md)
+    - [equality_mod](./alexandria_math/alexandria_math-mod_arithmetics-equality_mod.md)
 
-      - [is_prime](math/alexandria_math-is_prime-is_prime.md)
+    - [is_perfect_number](./alexandria_math/alexandria_math-perfect_number-is_perfect_number.md)
 
-      - [multiply](math/alexandria_math-karatsuba-multiply.md)
+    - [perfect_numbers](./alexandria_math/alexandria_math-perfect_number-perfect_numbers.md)
 
-      - [keccak256](math/alexandria_math-keccak256-keccak256.md)
+    - [sha256](./alexandria_math/alexandria_math-sha256-sha256.md)
 
-      - [lcm](math/alexandria_math-lcm_of_n_numbers-lcm.md)
+    - [fpow](./alexandria_math/alexandria_math-sha512-fpow.md)
 
-      - [add_mod](math/alexandria_math-mod_arithmetics-add_mod.md)
+    - [two_pow](./alexandria_math/alexandria_math-sha512-two_pow.md)
 
-      - [mult_inverse](math/alexandria_math-mod_arithmetics-mult_inverse.md)
+    - [sha512](./alexandria_math/alexandria_math-sha512-sha512.md)
 
-      - [add_inverse_mod](math/alexandria_math-mod_arithmetics-add_inverse_mod.md)
+    - [fast_sin_inner](./alexandria_math/alexandria_math-trigonometry-fast_sin_inner.md)
 
-      - [sub_mod](math/alexandria_math-mod_arithmetics-sub_mod.md)
+    - [fast_sin](./alexandria_math/alexandria_math-trigonometry-fast_sin.md)
 
-      - [mult_mod](math/alexandria_math-mod_arithmetics-mult_mod.md)
+    - [fast_cos](./alexandria_math/alexandria_math-trigonometry-fast_cos.md)
 
-      - [u256_wide_sqr](math/alexandria_math-mod_arithmetics-u256_wide_sqr.md)
+    - [fast_tan](./alexandria_math/alexandria_math-trigonometry-fast_tan.md)
 
-      - [sqr_mod](math/alexandria_math-mod_arithmetics-sqr_mod.md)
+    - [u512_add](./alexandria_math/alexandria_math-u512_arithmetics-u512_add.md)
 
-      - [div_mod](math/alexandria_math-mod_arithmetics-div_mod.md)
+    - [u512_sub](./alexandria_math/alexandria_math-u512_arithmetics-u512_sub.md)
 
-      - [pow_mod](math/alexandria_math-mod_arithmetics-pow_mod.md)
+    - [wad](./alexandria_math/alexandria_math-wad_ray_math-wad.md)
 
-      - [equality_mod](math/alexandria_math-mod_arithmetics-equality_mod.md)
+    - [ray](./alexandria_math/alexandria_math-wad_ray_math-ray.md)
 
-      - [is_perfect_number](math/alexandria_math-perfect_number-is_perfect_number.md)
+    - [half_wad](./alexandria_math/alexandria_math-wad_ray_math-half_wad.md)
 
-      - [perfect_numbers](math/alexandria_math-perfect_number-perfect_numbers.md)
+    - [half_ray](./alexandria_math/alexandria_math-wad_ray_math-half_ray.md)
 
-      - [sha256](math/alexandria_math-sha256-sha256.md)
+    - [wad_mul](./alexandria_math/alexandria_math-wad_ray_math-wad_mul.md)
 
-      - [fpow](math/alexandria_math-sha512-fpow.md)
+    - [wad_div](./alexandria_math/alexandria_math-wad_ray_math-wad_div.md)
 
-      - [two_pow](math/alexandria_math-sha512-two_pow.md)
+    - [ray_mul](./alexandria_math/alexandria_math-wad_ray_math-ray_mul.md)
 
-      - [sha512](math/alexandria_math-sha512-sha512.md)
+    - [ray_div](./alexandria_math/alexandria_math-wad_ray_math-ray_div.md)
 
-      - [fast_sin_inner](math/alexandria_math-trigonometry-fast_sin_inner.md)
+    - [ray_to_wad](./alexandria_math/alexandria_math-wad_ray_math-ray_to_wad.md)
 
-      - [fast_sin](math/alexandria_math-trigonometry-fast_sin.md)
+    - [wad_to_ray](./alexandria_math/alexandria_math-wad_ray_math-wad_to_ray.md)
 
-      - [fast_cos](math/alexandria_math-trigonometry-fast_cos.md)
+    - [day_of_week](./alexandria_math/alexandria_math-zellers_congruence-day_of_week.md)
 
-      - [fast_tan](math/alexandria_math-trigonometry-fast_tan.md)
+    - [check_input_parameters](./alexandria_math/alexandria_math-zellers_congruence-check_input_parameters.md)
 
-      - [u512_add](math/alexandria_math-u512_arithmetics-u512_add.md)
+  - [Structs](./alexandria_math/structs.md)
 
-      - [u512_sub](math/alexandria_math-u512_arithmetics-u512_sub.md)
+    - [Point](./alexandria_math/alexandria_math-ed25519-Point.md)
 
-      - [wad](math/alexandria_math-wad_ray_math-wad.md)
+    - [i257](./alexandria_math/alexandria_math-i257-i257.md)
 
-      - [ray](math/alexandria_math-wad_ray_math-ray.md)
+    - [Word64](./alexandria_math/alexandria_math-sha512-Word64.md)
 
-      - [half_wad](math/alexandria_math-wad_ray_math-half_wad.md)
+    - [u256X2](./alexandria_math/alexandria_math-u512_arithmetics-u256X2.md)
 
-      - [half_ray](math/alexandria_math-wad_ray_math-half_ray.md)
+  - [Enums](./alexandria_math/enums.md)
 
-      - [wad_mul](math/alexandria_math-wad_ray_math-wad_mul.md)
+    - [LCMError](./alexandria_math/alexandria_math-lcm_of_n_numbers-LCMError.md)
 
-      - [wad_div](math/alexandria_math-wad_ray_math-wad_div.md)
+  - [Traits](./alexandria_math/traits.md)
 
-      - [ray_mul](math/alexandria_math-wad_ray_math-ray_mul.md)
+    - [BitShift](./alexandria_math/alexandria_math-BitShift.md)
 
-      - [ray_div](math/alexandria_math-wad_ray_math-ray_div.md)
+    - [BitmapTrait](./alexandria_math/alexandria_math-bitmap-BitmapTrait.md)
 
-      - [ray_to_wad](math/alexandria_math-wad_ray_math-ray_to_wad.md)
+    - [PointOperations](./alexandria_math/alexandria_math-ed25519-PointOperations.md)
 
-      - [wad_to_ray](math/alexandria_math-wad_ray_math-wad_to_ray.md)
+    - [I257Trait](./alexandria_math/alexandria_math-i257-I257Trait.md)
 
-      - [day_of_week](math/alexandria_math-zellers_congruence-day_of_week.md)
+    - [WordOperations](./alexandria_math/alexandria_math-sha512-WordOperations.md)
 
-      - [check_input_parameters](math/alexandria_math-zellers_congruence-check_input_parameters.md)
+  - [Impls](./alexandria_math/impls.md)
 
-    - [Structs](math/structs.md)
+    - [U8BitShift](./alexandria_math/alexandria_math-U8BitShift.md)
 
-      - [Point](math/alexandria_math-ed25519-Point.md)
+    - [U16BitShift](./alexandria_math/alexandria_math-U16BitShift.md)
 
-      - [i257](math/alexandria_math-i257-i257.md)
+    - [U32BitShift](./alexandria_math/alexandria_math-U32BitShift.md)
 
-      - [Word64](math/alexandria_math-sha512-Word64.md)
+    - [U64BitShift](./alexandria_math/alexandria_math-U64BitShift.md)
 
-      - [u256X2](math/alexandria_math-u512_arithmetics-u256X2.md)
+    - [U128BitShift](./alexandria_math/alexandria_math-U128BitShift.md)
 
-    - [Enums](math/enums.md)
+    - [U256BitShift](./alexandria_math/alexandria_math-U256BitShift.md)
 
-      - [LCMError](math/alexandria_math-lcm_of_n_numbers-LCMError.md)
+    - [U8BitRotate](./alexandria_math/alexandria_math-U8BitRotate.md)
 
-    - [Traits](math/traits.md)
+    - [U16BitRotate](./alexandria_math/alexandria_math-U16BitRotate.md)
 
-      - [BitShift](math/alexandria_math-BitShift.md)
+    - [U32BitRotate](./alexandria_math/alexandria_math-U32BitRotate.md)
 
-      - [BitmapTrait](math/alexandria_math-bitmap-BitmapTrait.md)
+    - [U64BitRotate](./alexandria_math/alexandria_math-U64BitRotate.md)
 
-      - [PointOperations](math/alexandria_math-ed25519-PointOperations.md)
+    - [U128BitRotate](./alexandria_math/alexandria_math-U128BitRotate.md)
 
-      - [I257Trait](math/alexandria_math-i257-I257Trait.md)
+    - [U256BitRotate](./alexandria_math/alexandria_math-U256BitRotate.md)
 
-      - [WordOperations](math/alexandria_math-sha512-WordOperations.md)
+    - [I257Impl](./alexandria_math/alexandria_math-i257-I257Impl.md)
 
-    - [Impls](math/impls.md)
+    - [i257Zeroable](./alexandria_math/alexandria_math-i257-i257Zeroable.md)
 
-      - [U8BitShift](math/alexandria_math-U8BitShift.md)
+    - [DisplayI257Impl](./alexandria_math/alexandria_math-i257-DisplayI257Impl.md)
 
-      - [U16BitShift](math/alexandria_math-U16BitShift.md)
+    - [Word64WordOperations](./alexandria_math/alexandria_math-sha512-Word64WordOperations.md)
 
-      - [U32BitShift](math/alexandria_math-U32BitShift.md)
+    - [U512Intou256X2](./alexandria_math/alexandria_math-u512_arithmetics-U512Intou256X2.md)
 
-      - [U64BitShift](math/alexandria_math-U64BitShift.md)
+- [Alexandria Merkle Tree](./alexandria_merkle_tree/alexandria_merkle_tree_info.md)
 
-      - [U128BitShift](math/alexandria_math-U128BitShift.md)
+  - [Modules](./alexandria_merkle_tree/modules.md)
 
-      - [U256BitShift](math/alexandria_math-U256BitShift.md)
+    - [alexandria_merkle_tree](./alexandria_merkle_tree/alexandria_merkle_tree.md)
 
-      - [U8BitRotate](math/alexandria_math-U8BitRotate.md)
+    - [merkle_tree](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree.md)
 
-      - [U16BitRotate](math/alexandria_math-U16BitRotate.md)
+    - [storage_proof](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof.md)
 
-      - [U32BitRotate](math/alexandria_math-U32BitRotate.md)
+    - [pedersen](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-pedersen.md)
 
-      - [U64BitRotate](math/alexandria_math-U64BitRotate.md)
+    - [poseidon](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-poseidon.md)
 
-      - [U128BitRotate](math/alexandria_math-U128BitRotate.md)
+  - [Free functions](./alexandria_merkle_tree/free_functions.md)
 
-      - [U256BitRotate](math/alexandria_math-U256BitRotate.md)
+    - [verify](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-verify.md)
 
-      - [I257Impl](math/alexandria_math-i257-I257Impl.md)
+  - [Structs](./alexandria_merkle_tree/structs.md)
 
-      - [i257Zeroable](math/alexandria_math-i257-i257Zeroable.md)
+    - [Hasher](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-Hasher.md)
 
-      - [DisplayI257Impl](math/alexandria_math-i257-DisplayI257Impl.md)
+    - [MerkleTree](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-MerkleTree.md)
 
-      - [Word64WordOperations](math/alexandria_math-sha512-Word64WordOperations.md)
+    - [StoredMerkleTree](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-StoredMerkleTree.md)
 
-      - [U512Intou256X2](math/alexandria_math-u512_arithmetics-U512Intou256X2.md)
+    - [BinaryNode](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNode.md)
 
+    - [EdgeNode](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNode.md)
 
-## merkle_tree
-- [merkle_tree](merkle_tree/SUMMARY.md)
+    - [ContractData](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractData.md)
 
-    - [Modules](merkle_tree/modules.md)
+    - [ContractStateProof](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProof.md)
 
-      - [alexandria_merkle_tree](merkle_tree/alexandria_merkle_tree.md)
+  - [Enums](./alexandria_merkle_tree/enums.md)
 
-      - [merkle_tree](merkle_tree/alexandria_merkle_tree-merkle_tree.md)
+    - [TrieNode](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-TrieNode.md)
 
-      - [storage_proof](merkle_tree/alexandria_merkle_tree-storage_proof.md)
+  - [Traits](./alexandria_merkle_tree/traits.md)
 
-      - [pedersen](merkle_tree/alexandria_merkle_tree-merkle_tree-pedersen.md)
+    - [HasherTrait](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-HasherTrait.md)
 
-      - [poseidon](merkle_tree/alexandria_merkle_tree-merkle_tree-poseidon.md)
+    - [MerkleTreeTrait](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-MerkleTreeTrait.md)
 
-    - [Free functions](merkle_tree/free_functions.md)
+    - [BinaryNodeTrait](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNodeTrait.md)
 
-      - [verify](merkle_tree/alexandria_merkle_tree-storage_proof-verify.md)
+    - [EdgeNodeTrait](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNodeTrait.md)
 
-    - [Structs](merkle_tree/structs.md)
+    - [ContractDataTrait](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractDataTrait.md)
 
-      - [Hasher](merkle_tree/alexandria_merkle_tree-merkle_tree-Hasher.md)
+    - [ContractStateProofTrait](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProofTrait.md)
 
-      - [MerkleTree](merkle_tree/alexandria_merkle_tree-merkle_tree-MerkleTree.md)
+  - [Impls](./alexandria_merkle_tree/impls.md)
 
-      - [StoredMerkleTree](merkle_tree/alexandria_merkle_tree-merkle_tree-StoredMerkleTree.md)
+    - [PedersenHasherImpl](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-pedersen-PedersenHasherImpl.md)
 
-      - [BinaryNode](merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNode.md)
+    - [PoseidonHasherImpl](./alexandria_merkle_tree/alexandria_merkle_tree-merkle_tree-poseidon-PoseidonHasherImpl.md)
 
-      - [EdgeNode](merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNode.md)
+    - [BinaryNodeImpl](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNodeImpl.md)
 
-      - [ContractData](merkle_tree/alexandria_merkle_tree-storage_proof-ContractData.md)
+    - [EdgeNodeImpl](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNodeImpl.md)
 
-      - [ContractStateProof](merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProof.md)
+    - [ContractDataImpl](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractDataImpl.md)
 
-    - [Enums](merkle_tree/enums.md)
+    - [ContractStateProofImpl](./alexandria_merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProofImpl.md)
 
-      - [TrieNode](merkle_tree/alexandria_merkle_tree-storage_proof-TrieNode.md)
+- [Alexandria Numeric](./alexandria_numeric/alexandria_numeric_info.md)
 
-    - [Traits](merkle_tree/traits.md)
+  - [Modules](./alexandria_numeric/modules.md)
 
-      - [HasherTrait](merkle_tree/alexandria_merkle_tree-merkle_tree-HasherTrait.md)
+    - [alexandria_numeric](./alexandria_numeric/alexandria_numeric.md)
 
-      - [MerkleTreeTrait](merkle_tree/alexandria_merkle_tree-merkle_tree-MerkleTreeTrait.md)
+    - [cumprod](./alexandria_numeric/alexandria_numeric-cumprod.md)
 
-      - [BinaryNodeTrait](merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNodeTrait.md)
+    - [cumsum](./alexandria_numeric/alexandria_numeric-cumsum.md)
 
-      - [EdgeNodeTrait](merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNodeTrait.md)
+    - [diff](./alexandria_numeric/alexandria_numeric-diff.md)
 
-      - [ContractDataTrait](merkle_tree/alexandria_merkle_tree-storage_proof-ContractDataTrait.md)
+    - [integers](./alexandria_numeric/alexandria_numeric-integers.md)
 
-      - [ContractStateProofTrait](merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProofTrait.md)
+    - [interpolate](./alexandria_numeric/alexandria_numeric-interpolate.md)
 
-    - [Impls](merkle_tree/impls.md)
+    - [trapezoidal_rule](./alexandria_numeric/alexandria_numeric-trapezoidal_rule.md)
 
-      - [PedersenHasherImpl](merkle_tree/alexandria_merkle_tree-merkle_tree-pedersen-PedersenHasherImpl.md)
+  - [Free functions](./alexandria_numeric/free_functions.md)
 
-      - [PoseidonHasherImpl](merkle_tree/alexandria_merkle_tree-merkle_tree-poseidon-PoseidonHasherImpl.md)
+    - [cumprod](./alexandria_numeric/alexandria_numeric-cumprod-cumprod.md)
 
-      - [BinaryNodeImpl](merkle_tree/alexandria_merkle_tree-storage_proof-BinaryNodeImpl.md)
+    - [cumsum](./alexandria_numeric/alexandria_numeric-cumsum-cumsum.md)
 
-      - [EdgeNodeImpl](merkle_tree/alexandria_merkle_tree-storage_proof-EdgeNodeImpl.md)
+    - [diff](./alexandria_numeric/alexandria_numeric-diff-diff.md)
 
-      - [ContractDataImpl](merkle_tree/alexandria_merkle_tree-storage_proof-ContractDataImpl.md)
+    - [interpolate](./alexandria_numeric/alexandria_numeric-interpolate-interpolate.md)
 
-      - [ContractStateProofImpl](merkle_tree/alexandria_merkle_tree-storage_proof-ContractStateProofImpl.md)
+    - [interpolate_fast](./alexandria_numeric/alexandria_numeric-interpolate-interpolate_fast.md)
 
+    - [trapezoidal_rule](./alexandria_numeric/alexandria_numeric-trapezoidal_rule-trapezoidal_rule.md)
 
-## numeric
-- [numeric](numeric/SUMMARY.md)
+  - [Enums](./alexandria_numeric/enums.md)
 
-    - [Modules](numeric/modules.md)
+    - [Interpolation](./alexandria_numeric/alexandria_numeric-interpolate-Interpolation.md)
 
-      - [alexandria_numeric](numeric/alexandria_numeric.md)
+    - [Extrapolation](./alexandria_numeric/alexandria_numeric-interpolate-Extrapolation.md)
 
-      - [cumprod](numeric/alexandria_numeric-cumprod.md)
+  - [Traits](./alexandria_numeric/traits.md)
 
-      - [cumsum](numeric/alexandria_numeric-cumsum.md)
+    - [UIntBytes](./alexandria_numeric/alexandria_numeric-integers-UIntBytes.md)
 
-      - [diff](numeric/alexandria_numeric-diff.md)
+- [Alexandria Searching](./alexandria_searching/alexandria_searching_info.md)
 
-      - [integers](numeric/alexandria_numeric-integers.md)
+  - [Modules](./alexandria_searching/modules.md)
 
-      - [interpolate](numeric/alexandria_numeric-interpolate.md)
+    - [alexandria_searching](./alexandria_searching/alexandria_searching.md)
 
-      - [trapezoidal_rule](numeric/alexandria_numeric-trapezoidal_rule.md)
+    - [binary_search](./alexandria_searching/alexandria_searching-binary_search.md)
 
-    - [Free functions](numeric/free_functions.md)
+    - [bm_search](./alexandria_searching/alexandria_searching-bm_search.md)
 
-      - [cumprod](numeric/alexandria_numeric-cumprod-cumprod.md)
+    - [dijkstra](./alexandria_searching/alexandria_searching-dijkstra.md)
 
-      - [cumsum](numeric/alexandria_numeric-cumsum-cumsum.md)
+    - [levenshtein_distance](./alexandria_searching/alexandria_searching-levenshtein_distance.md)
 
-      - [diff](numeric/alexandria_numeric-diff-diff.md)
+  - [Free functions](./alexandria_searching/free_functions.md)
 
-      - [interpolate](numeric/alexandria_numeric-interpolate-interpolate.md)
+    - [binary_search](./alexandria_searching/alexandria_searching-binary_search-binary_search.md)
 
-      - [interpolate_fast](numeric/alexandria_numeric-interpolate-interpolate_fast.md)
+    - [binary_search_closest](./alexandria_searching/alexandria_searching-binary_search-binary_search_closest.md)
 
-      - [trapezoidal_rule](numeric/alexandria_numeric-trapezoidal_rule-trapezoidal_rule.md)
+    - [bm_search](./alexandria_searching/alexandria_searching-bm_search-bm_search.md)
 
-    - [Enums](numeric/enums.md)
+    - [dijkstra](./alexandria_searching/alexandria_searching-dijkstra-dijkstra.md)
 
-      - [Interpolation](numeric/alexandria_numeric-interpolate-Interpolation.md)
+    - [levenshtein_distance](./alexandria_searching/alexandria_searching-levenshtein_distance-levenshtein_distance.md)
 
-      - [Extrapolation](numeric/alexandria_numeric-interpolate-Extrapolation.md)
+  - [Structs](./alexandria_searching/structs.md)
 
-    - [Traits](numeric/traits.md)
+    - [Node](./alexandria_searching/alexandria_searching-dijkstra-Node.md)
 
-      - [UIntBytes](numeric/alexandria_numeric-integers-UIntBytes.md)
+    - [Graph](./alexandria_searching/alexandria_searching-dijkstra-Graph.md)
 
+  - [Traits](./alexandria_searching/traits.md)
 
-## searching
-- [searching](searching/SUMMARY.md)
+    - [GraphTrait](./alexandria_searching/alexandria_searching-dijkstra-GraphTrait.md)
 
-    - [Modules](searching/modules.md)
+    - [NodeGettersTrait](./alexandria_searching/alexandria_searching-dijkstra-NodeGettersTrait.md)
 
-      - [alexandria_searching](searching/alexandria_searching.md)
+  - [Impls](./alexandria_searching/impls.md)
 
-      - [binary_search](searching/alexandria_searching-binary_search.md)
+    - [NodeGetters](./alexandria_searching/alexandria_searching-dijkstra-NodeGetters.md)
 
-      - [bm_search](searching/alexandria_searching-bm_search.md)
+- [Alexandria Sorting](./alexandria_sorting/alexandria_sorting_info.md)
 
-      - [dijkstra](searching/alexandria_searching-dijkstra.md)
+  - [Modules](./alexandria_sorting/modules.md)
 
-      - [levenshtein_distance](searching/alexandria_searching-levenshtein_distance.md)
+    - [alexandria_sorting](./alexandria_sorting/alexandria_sorting.md)
 
-    - [Free functions](searching/free_functions.md)
+    - [interface](./alexandria_sorting/alexandria_sorting-interface.md)
 
-      - [binary_search](searching/alexandria_searching-binary_search-binary_search.md)
+    - [merge_sort](./alexandria_sorting/alexandria_sorting-merge_sort.md)
 
-      - [binary_search_closest](searching/alexandria_searching-binary_search-binary_search_closest.md)
+    - [quick_sort](./alexandria_sorting/alexandria_sorting-quick_sort.md)
 
-      - [bm_search](searching/alexandria_searching-bm_search-bm_search.md)
+  - [Traits](./alexandria_sorting/traits.md)
 
-      - [dijkstra](searching/alexandria_searching-dijkstra-dijkstra.md)
+    - [interface::Sortable](./alexandria_sorting/alexandria_sorting-interface-Sortable.md)
 
-      - [levenshtein_distance](searching/alexandria_searching-levenshtein_distance-levenshtein_distance.md)
+    - [interface::SortableVec](./alexandria_sorting/alexandria_sorting-interface-SortableVec.md)
 
-    - [Structs](searching/structs.md)
+  - [Impls](./alexandria_sorting/impls.md)
 
-      - [Node](searching/alexandria_searching-dijkstra-Node.md)
+    - [BubbleSort](./alexandria_sorting/alexandria_sorting-bubble_sort-BubbleSort.md)
 
-      - [Graph](searching/alexandria_searching-dijkstra-Graph.md)
+    - [merge_sort::MergeSort](./alexandria_sorting/alexandria_sorting-merge_sort-MergeSort.md)
 
-    - [Traits](searching/traits.md)
+    - [quick_sort::QuickSort](./alexandria_sorting/alexandria_sorting-quick_sort-QuickSort.md)
 
-      - [GraphTrait](searching/alexandria_searching-dijkstra-GraphTrait.md)
+- [Alexandria Storage](./alexandria_storage/alexandria_storage_info.md)
 
-      - [NodeGettersTrait](searching/alexandria_searching-dijkstra-NodeGettersTrait.md)
+  - [Modules](./alexandria_storage/modules.md)
 
-    - [Impls](searching/impls.md)
+    - [alexandria_storage](./alexandria_storage/alexandria_storage.md)
 
-      - [NodeGetters](searching/alexandria_searching-dijkstra-NodeGetters.md)
+    - [list](./alexandria_storage/alexandria_storage-list.md)
 
+  - [Structs](./alexandria_storage/structs.md)
 
-## sorting
-- [sorting](sorting/SUMMARY.md)
+    - [list::List](./alexandria_storage/alexandria_storage-list-List.md)
 
-    - [Modules](sorting/modules.md)
+  - [Traits](./alexandria_storage/traits.md)
 
-      - [alexandria_sorting](sorting/alexandria_sorting.md)
+    - [list::ListTrait](./alexandria_storage/alexandria_storage-list-ListTrait.md)
 
-      - [interface](sorting/alexandria_sorting-interface.md)
+- [Alexandria Utils](./alexandria_utils/alexandria_utils_info.md)
 
-      - [merge_sort](sorting/alexandria_sorting-merge_sort.md)
+  - [Modules](./alexandria_utils/modules.md)
 
-      - [quick_sort](sorting/alexandria_sorting-quick_sort.md)
+    - [alexandria_utils](./alexandria_utils/alexandria_utils.md)
 
-    - [Traits](sorting/traits.md)
+    - [fmt](./alexandria_utils/alexandria_utils-fmt.md)
 
-      - [interface::Sortable](sorting/alexandria_sorting-interface-Sortable.md)
+  - [Impl aliases](./alexandria_utils/impl_aliases.md)
 
-      - [interface::SortableVec](sorting/alexandria_sorting-interface-SortableVec.md)
+    - [EthAddressDisplay](./alexandria_utils/alexandria_utils-fmt-EthAddressDisplay.md)
 
-      - [interface::Sortable](sorting/alexandria_sorting-interface-Sortable.md)
+    - [ContractAddressDisplay](./alexandria_utils/alexandria_utils-fmt-ContractAddressDisplay.md)
 
-      - [interface::SortableVec](sorting/alexandria_sorting-interface-SortableVec.md)
+    - [ClassHashDisplay](./alexandria_utils/alexandria_utils-fmt-ClassHashDisplay.md)
 
-    - [Impls](sorting/impls.md)
+    - [StorageAddressDisplay](./alexandria_utils/alexandria_utils-fmt-StorageAddressDisplay.md)
 
-      - [BubbleSort](sorting/alexandria_sorting-bubble_sort-BubbleSort.md)
+    - [EthAddressDebug](./alexandria_utils/alexandria_utils-fmt-EthAddressDebug.md)
 
-      - [merge_sort::MergeSort](sorting/alexandria_sorting-merge_sort-MergeSort.md)
+    - [ContractAddressDebug](./alexandria_utils/alexandria_utils-fmt-ContractAddressDebug.md)
 
-      - [quick_sort::QuickSort](sorting/alexandria_sorting-quick_sort-QuickSort.md)
+    - [ClassHashDebug](./alexandria_utils/alexandria_utils-fmt-ClassHashDebug.md)
 
-      - [merge_sort::MergeSort](sorting/alexandria_sorting-merge_sort-MergeSort.md)
+    - [StorageAddressDebug](./alexandria_utils/alexandria_utils-fmt-StorageAddressDebug.md)
 
-      - [quick_sort::QuickSort](sorting/alexandria_sorting-quick_sort-QuickSort.md)
+  - [Impls](./alexandria_utils/impls.md)
 
-
-## storage
-- [storage](storage/SUMMARY.md)
-
-    - [Modules](storage/modules.md)
-
-      - [alexandria_storage](storage/alexandria_storage.md)
-
-      - [list](storage/alexandria_storage-list.md)
-
-    - [Structs](storage/structs.md)
-
-      - [list::List](storage/alexandria_storage-list-List.md)
-
-      - [list::List](storage/alexandria_storage-list-List.md)
-
-    - [Traits](storage/traits.md)
-
-      - [list::ListTrait](storage/alexandria_storage-list-ListTrait.md)
-
-      - [list::ListTrait](storage/alexandria_storage-list-ListTrait.md)
-
-
-## utils
-- [utils](utils/SUMMARY.md)
-
-    - [Modules](utils/modules.md)
-
-      - [alexandria_utils](utils/alexandria_utils.md)
-
-      - [fmt](utils/alexandria_utils-fmt.md)
-
-    - [Impl aliases](utils/impl_aliases.md)
-
-      - [EthAddressDisplay](utils/alexandria_utils-fmt-EthAddressDisplay.md)
-
-      - [ContractAddressDisplay](utils/alexandria_utils-fmt-ContractAddressDisplay.md)
-
-      - [ClassHashDisplay](utils/alexandria_utils-fmt-ClassHashDisplay.md)
-
-      - [StorageAddressDisplay](utils/alexandria_utils-fmt-StorageAddressDisplay.md)
-
-      - [EthAddressDebug](utils/alexandria_utils-fmt-EthAddressDebug.md)
-
-      - [ContractAddressDebug](utils/alexandria_utils-fmt-ContractAddressDebug.md)
-
-      - [ClassHashDebug](utils/alexandria_utils-fmt-ClassHashDebug.md)
-
-      - [StorageAddressDebug](utils/alexandria_utils-fmt-StorageAddressDebug.md)
-
-    - [Impls](utils/impls.md)
-
-      - [SpanTDebug](utils/alexandria_utils-fmt-SpanTDebug.md)
-
+    - [SpanTDebug](./alexandria_utils/alexandria_utils-fmt-SpanTDebug.md)
