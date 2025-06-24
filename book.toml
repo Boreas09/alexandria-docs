@@ -1,8 +1,12 @@
 [book]
-authors = ["0xTitan"]
+authors = ["Bora Atik, 0xTitan"]
 language = "en"
-multilingual = false
 src = "src"
+title = "Alexandria Docs"
+
 [output.html.fold]
-enable = true    # whether or not to enable section folding
-level = 0         # the depth to start folding
+enable = true
+level = 0
+
+[output.html.code.hidelines]
+cairo = "#"
