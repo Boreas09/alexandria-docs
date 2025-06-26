@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeEthAddr
 fn encode(mut self: Bytes, x: EthAddress) -> Bytes
 ```
 
-
 ### encode_packed
 
 Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeEthAddress::encode_packed`
@@ -24,5 +23,4 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeEthAddr
 ```rust
 fn encode_packed(mut self: Bytes, x: EthAddress) -> Bytes
 ```
-
 

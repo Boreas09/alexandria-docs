@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPItemByteArray::St
 String : ByteArray
 ```
 
-
 ### List
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPItemByteArray::List`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPItemByteArray::Li
 ```rust
 List : Span < RLPItemByteArray >
 ```
-
 

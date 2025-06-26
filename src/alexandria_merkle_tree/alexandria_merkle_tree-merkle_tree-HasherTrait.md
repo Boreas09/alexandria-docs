@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::HasherTrait::new`
 fn new() -> T
 ```
 
-
 ### hash
 
 Fully qualified path: `alexandria_merkle_tree::merkle_tree::HasherTrait::hash`
@@ -26,5 +25,4 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::HasherTrait::hash`
 ```rust
 fn hash(ref self: T, data1: felt252, data2: felt252) -> felt252
 ```
-
 

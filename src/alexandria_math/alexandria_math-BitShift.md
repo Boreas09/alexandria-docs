@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_math::BitShift::shl`
 fn shl(x: T, n: T) -> T
 ```
 
-
 ### shr
 
 Fully qualified path: `alexandria_math::BitShift::shr`
@@ -26,5 +25,4 @@ Fully qualified path: `alexandria_math::BitShift::shr`
 ```rust
 fn shr(x: T, n: T) -> T
 ```
-
 

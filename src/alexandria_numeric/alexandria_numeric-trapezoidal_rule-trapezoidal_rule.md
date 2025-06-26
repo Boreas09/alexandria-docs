@@ -1,6 +1,15 @@
 # trapezoidal_rule
 
-Integrate y(x). # Arguments * `xs` - The sorted abscissa sequence of len L. * `ys` - The ordinate sequence of len L. # Returns * `T` - The approximate integral.
+Integrate y(x).
+
+## Arguments
+
+- `xs` - The sorted abscissa sequence of len L.
+- `ys` - The ordinate sequence of len L.
+
+## Returns
+
+- `T` - The approximate integral.
 
 Fully qualified path: `alexandria_numeric::trapezoidal_rule::trapezoidal_rule`
 
@@ -21,4 +30,3 @@ pub fn trapezoidal_rule<
     mut xs: Span<T>, mut ys: Span<T>,
 ) -> T
 ```
-

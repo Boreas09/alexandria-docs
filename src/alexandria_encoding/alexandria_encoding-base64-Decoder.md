@@ -12,12 +12,19 @@ pub trait Decoder<T>
 
 ### decode
 
-Decodes Base64 encoded data back to raw bytes  # Arguments * `data` - The Base64 encoded data to decode  # Returns * `Array<u8>` - Raw bytes decoded from Base64 format
+Decodes Base64 encoded data back to raw bytes 
+
+#### Arguments
+
+- `data` - The Base64 encoded data to decode 
+
+#### Returns
+
+- `Array<u8>` - Raw bytes decoded from Base64 format
 
 Fully qualified path: `alexandria_encoding::base64::Decoder::decode`
 
 ```rust
 fn decode(data: T) -> Array<u8>
 ```
-
 

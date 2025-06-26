@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_math::U8BitShift::shl`
 fn shl(x: u8, n: u8) -> u8
 ```
 
-

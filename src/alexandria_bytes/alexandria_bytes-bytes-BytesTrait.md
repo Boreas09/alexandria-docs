@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::new`
 fn new(size: usize, data: Array<u128>) -> Bytes
 ```
 
-
 ### new_empty
 
 Create an empty Bytes
@@ -28,7 +27,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::new_empty`
 ```rust
 fn new_empty() -> Bytes
 ```
-
 
 ### zero
 
@@ -40,7 +38,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::zero`
 fn zero(size: usize) -> Bytes
 ```
 
-
 ### locate
 
 Locate offset in Bytes
@@ -50,7 +47,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::locate`
 ```rust
 fn locate(offset: usize) -> (usize, usize)
 ```
-
 
 ### size
 
@@ -62,7 +58,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::size`
 fn size(self: @Bytes) -> usize
 ```
 
-
 ### data
 
 Get data
@@ -72,7 +67,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::data`
 ```rust
 fn data(self: Bytes) -> Array<u128>
 ```
-
 
 ### update_at
 
@@ -84,7 +78,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::update_at`
 fn update_at(ref self: Bytes, offset: usize, value: u8)
 ```
 
-
 ### read_u128_packed
 
 Read value with size bytes from Bytes, and packed into u128
@@ -94,7 +87,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u128_packed`
 ```rust
 fn read_u128_packed(self: @Bytes, offset: usize, size: usize) -> (usize, u128)
 ```
-
 
 ### read_u128_array_packed
 
@@ -108,7 +100,6 @@ fn read_u128_array_packed(
 ) -> (usize, Array<u128>)
 ```
 
-
 ### read_felt252_packed
 
 Read value with size bytes from Bytes, and packed into felt252
@@ -118,7 +109,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_felt252_packed`
 ```rust
 fn read_felt252_packed(self: @Bytes, offset: usize, size: usize) -> (usize, felt252)
 ```
-
 
 ### read_u8
 
@@ -130,7 +120,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u8`
 fn read_u8(self: @Bytes, offset: usize) -> (usize, u8)
 ```
 
-
 ### read_u16
 
 Read a u16 from Bytes
@@ -140,7 +129,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u16`
 ```rust
 fn read_u16(self: @Bytes, offset: usize) -> (usize, u16)
 ```
-
 
 ### read_u32
 
@@ -152,7 +140,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u32`
 fn read_u32(self: @Bytes, offset: usize) -> (usize, u32)
 ```
 
-
 ### read_usize
 
 Read a usize from Bytes
@@ -162,7 +149,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_usize`
 ```rust
 fn read_usize(self: @Bytes, offset: usize) -> (usize, usize)
 ```
-
 
 ### read_u64
 
@@ -174,7 +160,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u64`
 fn read_u64(self: @Bytes, offset: usize) -> (usize, u64)
 ```
 
-
 ### read_u128
 
 Read a u128 from Bytes
@@ -184,7 +169,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u128`
 ```rust
 fn read_u128(self: @Bytes, offset: usize) -> (usize, u128)
 ```
-
 
 ### read_u256
 
@@ -196,7 +180,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u256`
 fn read_u256(self: @Bytes, offset: usize) -> (usize, u256)
 ```
 
-
 ### read_u256_array
 
 Read a u256 array from Bytes
@@ -206,7 +189,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_u256_array`
 ```rust
 fn read_u256_array(self: @Bytes, offset: usize, array_length: usize) -> (usize, Array<u256>)
 ```
-
 
 ### read_bytes
 
@@ -218,7 +200,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_bytes`
 fn read_bytes(self: @Bytes, offset: usize, size: usize) -> (usize, Bytes)
 ```
 
-
 ### read_felt252
 
 Read felt252 from Bytes, which stored as u256
@@ -228,7 +209,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_felt252`
 ```rust
 fn read_felt252(self: @Bytes, offset: usize) -> (usize, felt252)
 ```
-
 
 ### read_bytes31
 
@@ -240,7 +220,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_bytes31`
 fn read_bytes31(self: @Bytes, offset: usize) -> (usize, bytes31)
 ```
 
-
 ### read_address
 
 Read a ContractAddress from Bytes
@@ -250,7 +229,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::read_address`
 ```rust
 fn read_address(self: @Bytes, offset: usize) -> (usize, ContractAddress)
 ```
-
 
 ### append_u128_packed
 
@@ -262,7 +240,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u128_packed`
 fn append_u128_packed(ref self: Bytes, value: u128, size: usize)
 ```
 
-
 ### append_u8
 
 Write u8 into Bytes
@@ -272,7 +249,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u8`
 ```rust
 fn append_u8(ref self: Bytes, value: u8)
 ```
-
 
 ### append_u16
 
@@ -284,7 +260,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u16`
 fn append_u16(ref self: Bytes, value: u16)
 ```
 
-
 ### append_u32
 
 Write u32 into Bytes
@@ -294,7 +269,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u32`
 ```rust
 fn append_u32(ref self: Bytes, value: u32)
 ```
-
 
 ### append_usize
 
@@ -306,7 +280,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_usize`
 fn append_usize(ref self: Bytes, value: usize)
 ```
 
-
 ### append_u64
 
 Write u64 into Bytes
@@ -316,7 +289,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u64`
 ```rust
 fn append_u64(ref self: Bytes, value: u64)
 ```
-
 
 ### append_u128
 
@@ -328,7 +300,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u128`
 fn append_u128(ref self: Bytes, value: u128)
 ```
 
-
 ### append_u256
 
 Write u256 into Bytes
@@ -338,7 +309,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_u256`
 ```rust
 fn append_u256(ref self: Bytes, value: u256)
 ```
-
 
 ### append_felt252
 
@@ -350,7 +320,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_felt252`
 fn append_felt252(ref self: Bytes, value: felt252)
 ```
 
-
 ### append_bytes31
 
 Write bytes31 into Bytes
@@ -360,7 +329,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_bytes31`
 ```rust
 fn append_bytes31(ref self: Bytes, value: bytes31)
 ```
-
 
 ### append_address
 
@@ -372,7 +340,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::append_address`
 fn append_address(ref self: Bytes, value: ContractAddress)
 ```
 
-
 ### concat
 
 concat with other Bytes
@@ -382,7 +349,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::concat`
 ```rust
 fn concat(ref self: Bytes, other: @Bytes)
 ```
-
 
 ### keccak
 
@@ -394,7 +360,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::keccak`
 fn keccak(self: @Bytes) -> u256
 ```
 
-
 ### sha256
 
 sha256 hash
@@ -404,5 +369,4 @@ Fully qualified path: `alexandria_bytes::bytes::BytesTrait::sha256`
 ```rust
 fn sha256(self: @Bytes) -> u256
 ```
-
 

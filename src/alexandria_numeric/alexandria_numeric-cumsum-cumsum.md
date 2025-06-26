@@ -1,6 +1,14 @@
 # cumsum
 
-Compute the cumulative sum of a sequence. # Arguments * `sequence` - The sequence to operate. # Returns * `Array<T>` - The cumulative sum of sequence.
+Compute the cumulative sum of a sequence.
+
+## Arguments
+
+- `sequence` - The sequence to operate.
+
+## Returns
+
+- `Array<T>` - The cumulative sum of sequence.
 
 Fully qualified path: `alexandria_numeric::cumsum::cumsum`
 

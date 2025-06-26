@@ -19,4 +19,3 @@ Fully qualified path: `alexandria_math::lcm_of_n_numbers::LCMError::EmptyInput`
 EmptyInput
 ```
 
-

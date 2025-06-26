@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::pedersen::PedersenHa
 fn new() -> Hasher
 ```
 
-
 ### hash
 
 Fully qualified path: `alexandria_merkle_tree::merkle_tree::pedersen::PedersenHasherImpl::hash`
@@ -24,5 +23,4 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::pedersen::PedersenHa
 ```rust
 fn hash(ref self: Hasher, data1: felt252, data2: felt252) -> felt252
 ```
-
 

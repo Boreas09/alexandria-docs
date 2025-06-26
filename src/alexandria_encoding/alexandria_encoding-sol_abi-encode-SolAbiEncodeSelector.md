@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeSelecto
 fn encode_selector(mut self: Bytes, selector: u32) -> Bytes
 ```
 
-

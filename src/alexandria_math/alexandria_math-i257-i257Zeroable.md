@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_math::i257::i257Zeroable::zero`
 fn zero() -> i257
 ```
 
-
 ### is_zero
 
 Fully qualified path: `alexandria_math::i257::i257Zeroable::is_zero`
@@ -25,7 +24,6 @@ Fully qualified path: `alexandria_math::i257::i257Zeroable::is_zero`
 fn is_zero(self: @i257) -> bool
 ```
 
-
 ### is_non_zero
 
 Fully qualified path: `alexandria_math::i257::i257Zeroable::is_non_zero`
@@ -33,5 +31,4 @@ Fully qualified path: `alexandria_math::i257::i257Zeroable::is_non_zero`
 ```rust
 fn is_non_zero(self: @i257) -> bool
 ```
-
 

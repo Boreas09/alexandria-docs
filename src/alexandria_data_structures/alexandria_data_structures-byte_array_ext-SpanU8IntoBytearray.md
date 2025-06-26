@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_data_structures::byte_array_ext::SpanU8IntoByt
 fn into(self: Span<u8>) -> ByteArray
 ```
 
-

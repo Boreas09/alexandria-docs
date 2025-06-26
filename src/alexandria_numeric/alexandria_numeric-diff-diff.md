@@ -1,6 +1,14 @@
 # diff
 
-Compute the discrete difference of a sorted sequence. # Arguments * `sequence` - The sorted sequence to operate. # Returns * `Array<T>` - The discrete difference of sorted sequence.
+Compute the discrete difference of a sorted sequence.
+
+## Arguments
+
+- `sequence` - The sorted sequence to operate.
+
+## Returns
+
+- `Array<T>` - The discrete difference of sorted sequence.
 
 Fully qualified path: `alexandria_numeric::diff::diff`
 

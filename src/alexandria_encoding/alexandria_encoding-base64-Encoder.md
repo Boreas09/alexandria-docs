@@ -12,12 +12,19 @@ pub trait Encoder<T>
 
 ### encode
 
-Encodes data into Base64 format  # Arguments * `data` - The data to encode  # Returns * `Array<u8>` - Base64 encoded representation as bytes
+Encodes data into Base64 format 
+
+#### Arguments
+
+- `data` - The data to encode 
+
+#### Returns
+
+- `Array<u8>` - Base64 encoded representation as bytes
 
 Fully qualified path: `alexandria_encoding::base64::Encoder::encode`
 
 ```rust
 fn encode(data: T) -> Array<u8>
 ```
-
 

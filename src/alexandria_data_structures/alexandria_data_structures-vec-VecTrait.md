@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::new`
 fn new() -> V
 ```
 
-
 ### get
 
 Returns the item at the given index, or None if the index is out of bounds. Parameters * self The vec instance. * index The index of the item to get. Returns * Option The item at the given index, or None if the index is out of bounds.
@@ -28,7 +27,6 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::get`
 ```rust
 fn get(ref self: V, index: usize) -> Option<T>
 ```
-
 
 ### at
 
@@ -40,7 +38,6 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::at`
 fn at(ref self: V, index: usize) -> T
 ```
 
-
 ### push
 
 Pushes a new item to the vec. Parameters * self The vec instance. * value The value to push onto the vec.
@@ -50,7 +47,6 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::push`
 ```rust
 fn push(ref self: V, value: T)
 ```
-
 
 ### set
 
@@ -62,7 +58,6 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::set`
 fn set(ref self: V, index: usize, value: T)
 ```
 
-
 ### len
 
 Returns the length of the vec. Parameters * self The vec instance. Returns * usize The length of the vec.
@@ -72,5 +67,4 @@ Fully qualified path: `alexandria_data_structures::vec::VecTrait::len`
 ```rust
 fn len(self: @V) -> usize
 ```
-
 

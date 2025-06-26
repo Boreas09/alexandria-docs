@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayIntoArrayU8::i
 fn into(self: ByteArray) -> Array<u8>
 ```
 
-

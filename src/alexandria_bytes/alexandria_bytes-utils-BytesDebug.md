@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_bytes::utils::BytesDebug::fmt`
 fn fmt(self: @Bytes, ref f: Formatter) -> Result<(), Error>
 ```
 
-

@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_merkle_tree::storage_proof::BinaryNodeTrait::n
 fn new(left: felt252, right: felt252) -> BinaryNode
 ```
 
-

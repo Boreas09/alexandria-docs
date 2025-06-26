@@ -18,4 +18,3 @@ Fully qualified path: `alexandria_encoding::sol_abi::decode::SolAbiDecodeBytes::
 fn decode(self: @Bytes, ref offset: usize) -> Bytes
 ```
 
-

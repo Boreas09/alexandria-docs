@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_bytes::bytes::BytesIndex::index`
 fn index(self: @Bytes, index: usize) -> @u128
 ```
 
-
 ## Impl types
 
 ### Target
@@ -26,5 +25,4 @@ Fully qualified path: `alexandria_bytes::bytes::BytesIndex::Target`
 ```rust
 type Target = @u128;
 ```
-
 

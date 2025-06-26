@@ -1,6 +1,10 @@
 # half_wad
 
-Return the half wad value # Returns * `u256` - The value
+Return the half wad value
+
+#### Returns
+
+- `u256` - The value
 
 Fully qualified path: `alexandria_math::wad_ray_math::half_wad`
 

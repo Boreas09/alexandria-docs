@@ -1,6 +1,8 @@
 # merkle_tree
 
-MerkleTree implementation.  # Examples
+MerkleTree implementation. 
+
+#### Examples
 ```cairo
 // This version uses the pedersen hash method because the PedersenHasherImpl is in the scope.
 use alexandria_data_structures::merkle_tree::{Hasher, MerkleTree, pedersen::PedersenHasherImpl,

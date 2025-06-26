@@ -1,6 +1,10 @@
 # ray
 
-Return the ray value # Returns * `u256` - The value
+Return the ray value
+
+#### Returns
+
+- `u256` - The value
 
 Fully qualified path: `alexandria_math::wad_ray_math::ray`
 

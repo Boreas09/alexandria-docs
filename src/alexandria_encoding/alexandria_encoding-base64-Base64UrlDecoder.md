@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::base64::Base64UrlDecoder::decode`
 fn decode(data: Array<u8>) -> Array<u8>
 ```
 
-

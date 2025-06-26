@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_math::i257::DisplayI257Impl::fmt`
 fn fmt(self: @i257, ref f: Formatter) -> Result<(), Error>
 ```
 
-

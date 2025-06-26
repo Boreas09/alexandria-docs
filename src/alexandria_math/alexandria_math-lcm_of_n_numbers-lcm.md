@@ -1,6 +1,14 @@
 # lcm
 
-Calculate the lowest common multiple for n numbers # Arguments * `n` - The array of numbers to calculate the lcm for # Returns * `Result<T, LCMError>` - The lcm of input numbers
+Calculate the lowest common multiple for n numbers
+
+#### Arguments
+
+- `n` - The array of numbers to calculate the lcm for
+
+#### Returns
+
+- `Result<T, LCMError>` - The lcm of input numbers
 
 Fully qualified path: `alexandria_math::lcm_of_n_numbers::lcm`
 

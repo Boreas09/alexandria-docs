@@ -19,4 +19,3 @@ Fully qualified path: `alexandria_math::sha512::Word64::data`
 pub data: u64
 ```
 
-

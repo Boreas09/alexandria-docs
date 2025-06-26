@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_sorting::bubble_sort::BubbleSort::sort`
 fn sort<T, +Copy<T>, +Drop<T>, +PartialOrd<T>>(mut array: Span<T>) -> Array<T>
 ```
 
-

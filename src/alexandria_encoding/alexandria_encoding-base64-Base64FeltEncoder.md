@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::base64::Base64FeltEncoder::encode`
 fn encode(data: felt252) -> Array<u8>
 ```
 
-

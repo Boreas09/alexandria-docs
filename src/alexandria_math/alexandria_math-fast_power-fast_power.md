@@ -1,6 +1,19 @@
 # fast_power
 
-Calculate the base ^ power using the fast powering algorithm # Arguments * `base` - The base of the exponentiation * `power` - The power of the exponentiation # Returns * `T` - The result of base ^ power # Panics * `base` is 0
+Calculate the base ^ power using the fast powering algorithm
+
+#### Arguments
+
+- `base` - The base of the exponentiation
+- `power` - The power of the exponentiation
+
+#### Returns
+
+- `T` - The result of base ^ power
+
+#### Panics
+
+- `base` is 0
 
 Fully qualified path: `alexandria_math::fast_power::fast_power`
 
@@ -20,4 +33,3 @@ pub fn fast_power<
     base: T, mut power: T,
 ) -> T
 ```
-
