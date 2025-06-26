@@ -18,4 +18,3 @@ Fully qualified path: `alexandria_encoding::base58::Base58Encoder::encode`
 fn encode(data: Span<u8>) -> Array<u8>
 ```
 
-

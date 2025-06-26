@@ -12,12 +12,19 @@ pub trait ByteArrayEncoder
 
 ### encode
 
-Encodes a ByteArray into Base64 format  # Arguments * `data` - The ByteArray to encode  # Returns * `ByteArray` - Base64 encoded representation as ByteArray
+Encodes a ByteArray into Base64 format 
+
+#### Arguments
+
+- `data` - The ByteArray to encode 
+
+#### Returns
+
+- `ByteArray` - Base64 encoded representation as ByteArray
 
 Fully qualified path: `alexandria_encoding::base64::ByteArrayEncoder::encode`
 
 ```rust
 fn encode(data: ByteArray) -> ByteArray
 ```
-
 

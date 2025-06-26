@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_math::U64BitRotate::rotate_left`
 fn rotate_left(x: u64, n: u64) -> u64
 ```
 
-
 ### rotate_right
 
 Fully qualified path: `alexandria_math::U64BitRotate::rotate_right`
@@ -24,5 +23,4 @@ Fully qualified path: `alexandria_math::U64BitRotate::rotate_right`
 ```rust
 fn rotate_right(x: u64, n: u64) -> u64
 ```
-
 

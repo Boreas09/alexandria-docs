@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_math::U64BitShift::shl`
 fn shl(x: u64, n: u64) -> u64
 ```
 
-

@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeStarkne
 fn encode(mut self: Bytes, x: ContractAddress) -> Bytes
 ```
 
-
 ### encode_packed
 
 Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeStarknetAddress::encode_packed`
@@ -26,5 +25,4 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeStarkne
 ```rust
 fn encode_packed(mut self: Bytes, x: ContractAddress) -> Bytes
 ```
-
 

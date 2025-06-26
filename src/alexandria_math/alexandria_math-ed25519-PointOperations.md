@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_math::ed25519::PointOperations::double`
 fn double(self: T, prime_nz: NonZero<u256>) -> T
 ```
 
-
 ### add
 
 Fully qualified path: `alexandria_math::ed25519::PointOperations::add`
@@ -24,5 +23,4 @@ Fully qualified path: `alexandria_math::ed25519::PointOperations::add`
 ```rust
 fn add(self: T, rhs: T, prime_nz: NonZero<u256>) -> T
 ```
-
 

@@ -18,4 +18,3 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode_as::SolAbiEncodeAsBy
 fn encode_as(mut self: Bytes, byteSize: usize, x: Bytes) -> Bytes
 ```
 
-

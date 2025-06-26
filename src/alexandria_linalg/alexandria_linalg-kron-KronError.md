@@ -19,4 +19,3 @@ Fully qualified path: `alexandria_linalg::kron::KronError::UnequalLength`
 UnequalLength
 ```
 
-

@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::base64::Base64ByteArrayEncoder::enco
 fn encode(data: ByteArray) -> ByteArray
 ```
 
-

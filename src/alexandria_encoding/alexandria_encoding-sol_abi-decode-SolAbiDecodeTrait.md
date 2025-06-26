@@ -12,12 +12,19 @@ pub trait SolAbiDecodeTrait<T>
 
 ### decode
 
-Decodes a value of type T from bytes starting at the given offset # Arguments * `self` - Reference to the Bytes containing encoded data * `offset` - Mutable reference to the current offset position (updated after decode) # Returns * `T` - The decoded value of type T
+Decodes a value of type T from bytes starting at the given offset
+
+## Arguments
+
+- `self` - Reference to the Bytes containing encoded data
+- `offset` - Mutable reference to the current offset position (updated after decode)
+
+## Returns
+
+- `T` - The decoded value of type T
 
 Fully qualified path: `alexandria_encoding::sol_abi::decode::SolAbiDecodeTrait::decode`
 
 ```rust
 fn decode(self: @Bytes, ref offset: usize) -> T
 ```
-
-

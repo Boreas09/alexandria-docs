@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_math::u512_arithmetics::U512Intou256X2::into`
 fn into(self: u512) -> u256X2
 ```
 
-

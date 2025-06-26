@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_bytes::bytes::ByteArrayIntoBytes::into`
 fn into(self: ByteArray) -> Bytes
 ```
 
-

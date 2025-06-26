@@ -20,4 +20,3 @@ Fully qualified path: `alexandria_sorting::interface::Sortable::sort`
 fn sort<T, +Copy<T>, +Drop<T>, +PartialOrd<T>>(array: Span<T>) -> Array<T>
 ```
 
-

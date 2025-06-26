@@ -12,7 +12,12 @@ pub trait ByteAppenderSupportTrait<T>
 
 ### append_bytes_be
 
-Appends `bytes` data of size `count` ordered in big endian # Arguments * `bytes` - big endian ordered bytes to append * `count` - number of bytes from input to append
+Appends `bytes` data of size `count` ordered in big endian
+
+## Arguments
+
+- `bytes` - big endian ordered bytes to append
+- `count` - number of bytes from input to append
 
 Fully qualified path: `alexandria_data_structures::byte_appender::ByteAppenderSupportTrait::append_bytes_be`
 
@@ -20,15 +25,17 @@ Fully qualified path: `alexandria_data_structures::byte_appender::ByteAppenderSu
 fn append_bytes_be(ref self: T, bytes: felt252, count: usize)
 ```
 
-
 ### append_bytes_le
 
-Appends `bytes` data of size `count` ordered in little endian # Arguments * `bytes` - little endian ordered bytes to append * `count` - number of bytes from input to append
+Appends `bytes` data of size `count` ordered in little endian
+
+## Arguments
+
+- `bytes` - little endian ordered bytes to append
+- `count` - number of bytes from input to append
 
 Fully qualified path: `alexandria_data_structures::byte_appender::ByteAppenderSupportTrait::append_bytes_le`
 
 ```rust
 fn append_bytes_le(ref self: T, bytes: felt252, count: usize)
 ```
-
-

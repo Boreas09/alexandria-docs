@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_utils::fmt::SpanTDebug::fmt`
 fn fmt(self: @Span<T>, ref f: Formatter) -> Result<(), Error>
 ```
 
-

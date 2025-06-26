@@ -21,7 +21,6 @@ Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPError::EmptyInput
 EmptyInput
 ```
 
-
 ### InputTooShort
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPError::InputTooShort`
@@ -30,7 +29,6 @@ Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPError::InputTooSh
 InputTooShort
 ```
 
-
 ### PayloadTooLong
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPError::PayloadTooLong`
@@ -38,5 +36,4 @@ Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPError::PayloadToo
 ```rust
 PayloadTooLong
 ```
-
 

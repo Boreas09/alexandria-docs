@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_encoding::rlp::RLPItem::String`
 String : Span < u8 >
 ```
 
-
 ### List
 
 Fully qualified path: `alexandria_encoding::rlp::RLPItem::List`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_encoding::rlp::RLPItem::List`
 ```rust
 List : Span < RLPItem >
 ```
-
 

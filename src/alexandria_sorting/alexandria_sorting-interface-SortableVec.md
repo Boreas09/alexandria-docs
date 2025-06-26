@@ -22,4 +22,3 @@ fn sort<T, +Copy<T>, +Drop<T>, +PartialOrd<T>, +Felt252DictValue<T>>(
 ) -> Felt252Vec<T>
 ```
 
-

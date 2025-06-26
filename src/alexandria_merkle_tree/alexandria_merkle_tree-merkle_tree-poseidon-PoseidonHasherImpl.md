@@ -16,7 +16,6 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::poseidon::PoseidonHa
 fn new() -> Hasher
 ```
 
-
 ### hash
 
 Fully qualified path: `alexandria_merkle_tree::merkle_tree::poseidon::PoseidonHasherImpl::hash`
@@ -24,5 +23,4 @@ Fully qualified path: `alexandria_merkle_tree::merkle_tree::poseidon::PoseidonHa
 ```rust
 fn hash(ref self: Hasher, data1: felt252, data2: felt252) -> felt252
 ```
-
 

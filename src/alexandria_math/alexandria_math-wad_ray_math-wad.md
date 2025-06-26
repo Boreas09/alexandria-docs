@@ -1,6 +1,10 @@
 # wad
 
-Return the wad value # Returns * `u256` - The value
+Return the wad value
+
+#### Returns
+
+- `u256` - The value
 
 Fully qualified path: `alexandria_math::wad_ray_math::wad`
 

@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_encoding::rlp::RLPType::String`
 String
 ```
 
-
 ### List
 
 Fully qualified path: `alexandria_encoding::rlp::RLPType::List`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_encoding::rlp::RLPType::List`
 ```rust
 List
 ```
-
 

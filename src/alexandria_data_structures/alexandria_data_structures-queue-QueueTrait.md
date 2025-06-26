@@ -10,7 +10,11 @@ pub trait QueueTrait<T>
 
 ### new
 
-Creates a new empty queue  # Returns * `Queue<T>` - A new empty queue instance
+Creates a new empty queue
+
+#### Returns
+
+- `Queue<T>` - A new empty queue instance
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::new`
 
@@ -18,10 +22,14 @@ Fully qualified path: `alexandria_data_structures::queue::QueueTrait::new`
 fn new() -> Queue<T>
 ```
 
-
 ### enqueue
 
-Adds an element to the back of the queue  # Arguments * `self` - The queue to add the element to * `value` - The element to add
+Adds an element to the back of the queue
+
+## Arguments
+
+- `self` - The queue to add the element to
+- `value` - The element to add
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::enqueue`
 
@@ -29,10 +37,17 @@ Fully qualified path: `alexandria_data_structures::queue::QueueTrait::enqueue`
 fn enqueue(ref self: Queue<T>, value: T)
 ```
 
-
 ### dequeue
 
-Removes and returns the front element from the queue  # Arguments * `self` - The queue to remove the element from  # Returns * `Option<T>` - Some(element) if queue is not empty, None otherwise
+Removes and returns the front element from the queue
+
+#### Arguments
+
+- `self` - The queue to remove the element from
+
+#### Returns
+
+- `Option<T>` - Some(element) if queue is not empty, None otherwise
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::dequeue`
 
@@ -40,10 +55,17 @@ Fully qualified path: `alexandria_data_structures::queue::QueueTrait::dequeue`
 fn dequeue(ref self: Queue<T>) -> Option<T>
 ```
 
-
 ### peek_front
 
-Returns a reference to the front element without removing it  # Arguments * `self` - The queue to peek into  # Returns * `Option<Box<@T>>` - Some(reference) to front element if queue is not empty, None otherwise
+Returns a reference to the front element without removing it
+
+#### Arguments
+
+- `self` - The queue to peek into
+
+#### Returns
+
+- `Option<Box<@T>>` - Some(reference) to front element if queue is not empty, None otherwise
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::peek_front`
 
@@ -51,10 +73,17 @@ Fully qualified path: `alexandria_data_structures::queue::QueueTrait::peek_front
 fn peek_front(self: @Queue<T>) -> Option<Box<@T>>
 ```
 
-
 ### len
 
-Returns the number of elements in the queue  # Arguments * `self` - The queue to get the length of  # Returns * `usize` - The number of elements in the queue
+Returns the number of elements in the queue
+
+#### Arguments
+
+- `self` - The queue to get the length of
+
+#### Returns
+
+- `usize` - The number of elements in the queue
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::len`
 
@@ -62,15 +91,20 @@ Fully qualified path: `alexandria_data_structures::queue::QueueTrait::len`
 fn len(self: @Queue<T>) -> usize
 ```
 
-
 ### is_empty
 
-Checks if the queue is empty  # Arguments * `self` - The queue to check  # Returns * `bool` - True if the queue contains no elements, false otherwise
+Checks if the queue is empty
+
+#### Arguments
+
+- `self` - The queue to check
+
+#### Returns
+
+- `bool` - True if the queue contains no elements, false otherwise
 
 Fully qualified path: `alexandria_data_structures::queue::QueueTrait::is_empty`
 
 ```rust
 fn is_empty(self: @Queue<T>) -> bool
 ```
-
-

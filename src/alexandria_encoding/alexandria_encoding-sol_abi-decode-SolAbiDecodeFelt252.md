@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::sol_abi::decode::SolAbiDecodeFelt252
 fn decode(self: @Bytes, ref offset: usize) -> felt252
 ```
 
-

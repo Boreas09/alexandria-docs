@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeBytes::
 fn encode(mut self: Bytes, mut x: Bytes) -> Bytes
 ```
 
-
 ### encode_packed
 
 Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeBytes::encode_packed`
@@ -26,5 +25,4 @@ Fully qualified path: `alexandria_encoding::sol_abi::encode::SolAbiEncodeBytes::
 ```rust
 fn encode_packed(mut self: Bytes, x: Bytes) -> Bytes
 ```
-
 

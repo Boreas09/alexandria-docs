@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_merkle_tree::storage_proof::TrieNode::Binary`
 Binary : BinaryNode
 ```
 
-
 ### Edge
 
 Fully qualified path: `alexandria_merkle_tree::storage_proof::TrieNode::Edge`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_merkle_tree::storage_proof::TrieNode::Edge`
 ```rust
 Edge : EdgeNode
 ```
-
 

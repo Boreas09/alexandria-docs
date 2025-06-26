@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_numeric::interpolate::Extrapolation::Null`
 Null
 ```
 
-
 ### Constant
 
 Fully qualified path: `alexandria_numeric::interpolate::Extrapolation::Constant`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_numeric::interpolate::Extrapolation::Constant`
 ```rust
 Constant
 ```
-
 

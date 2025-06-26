@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::base58::Base58Decoder::decode`
 fn decode(data: Span<u8>) -> Array<u8>
 ```
 
-

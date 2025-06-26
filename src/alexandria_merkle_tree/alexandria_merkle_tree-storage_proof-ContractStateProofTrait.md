@@ -18,4 +18,3 @@ fn new(
 ) -> ContractStateProof
 ```
 
-

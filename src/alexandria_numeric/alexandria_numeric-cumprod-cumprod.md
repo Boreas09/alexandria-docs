@@ -1,6 +1,14 @@
 # cumprod
 
-Compute the cumulative product of a sequence. # Arguments * `sequence` - The sequence to operate. # Returns * `Array<T>` - The cumulative product of sequence.
+Compute the cumulative product of a sequence.
+
+## Arguments
+
+- `sequence` - The sequence to operate.
+
+## Returns
+
+- `Array<T>` - The cumulative product of sequence.
 
 Fully qualified path: `alexandria_numeric::cumprod::cumprod`
 

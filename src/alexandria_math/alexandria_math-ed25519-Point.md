@@ -20,7 +20,6 @@ Fully qualified path: `alexandria_math::ed25519::Point::x`
 pub x: u256
 ```
 
-
 ### y
 
 Fully qualified path: `alexandria_math::ed25519::Point::y`
@@ -28,5 +27,4 @@ Fully qualified path: `alexandria_math::ed25519::Point::y`
 ```rust
 pub y: u256
 ```
-
 

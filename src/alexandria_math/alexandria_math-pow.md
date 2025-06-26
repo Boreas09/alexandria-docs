@@ -1,6 +1,10 @@
 # pow
 
-Raise a number to a power. O(log n) time complexity. * `base` - The number to raise. * `exp` - The exponent. # Returns * `T` - The result of base raised to the power of exp.
+Raise a number to a power. O(log n) time complexity. * `base` - The number to raise. * `exp` - The exponent.
+
+#### Returns
+
+- `T` - The result of base raised to the power of exp.
 
 Fully qualified path: `alexandria_math::pow`
 

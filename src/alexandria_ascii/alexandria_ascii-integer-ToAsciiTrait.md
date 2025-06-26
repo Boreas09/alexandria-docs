@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_ascii::integer::ToAsciiTrait::to_ascii`
 fn to_ascii(self: T) -> U
 ```
 
-

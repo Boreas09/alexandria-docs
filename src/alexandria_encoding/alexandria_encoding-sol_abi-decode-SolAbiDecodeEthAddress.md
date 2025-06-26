@@ -16,4 +16,3 @@ Fully qualified path: `alexandria_encoding::sol_abi::decode::SolAbiDecodeEthAddr
 fn decode(self: @Bytes, ref offset: usize) -> EthAddress
 ```
 
-

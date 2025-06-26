@@ -22,7 +22,6 @@ Fully qualified path: `alexandria_numeric::interpolate::Interpolation::Linear`
 Linear
 ```
 
-
 ### Nearest
 
 Fully qualified path: `alexandria_numeric::interpolate::Interpolation::Nearest`
@@ -30,7 +29,6 @@ Fully qualified path: `alexandria_numeric::interpolate::Interpolation::Nearest`
 ```rust
 Nearest
 ```
-
 
 ### ConstantLeft
 
@@ -40,7 +38,6 @@ Fully qualified path: `alexandria_numeric::interpolate::Interpolation::ConstantL
 ConstantLeft
 ```
 
-
 ### ConstantRight
 
 Fully qualified path: `alexandria_numeric::interpolate::Interpolation::ConstantRight`
@@ -48,5 +45,4 @@ Fully qualified path: `alexandria_numeric::interpolate::Interpolation::ConstantR
 ```rust
 ConstantRight
 ```
-
 

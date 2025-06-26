@@ -18,7 +18,6 @@ Fully qualified path: `alexandria_bytes::storage::BytesStore::read`
 fn read(address_domain: u32, base: StorageBaseAddress) -> SyscallResult<Bytes>
 ```
 
-
 ### write
 
 Fully qualified path: `alexandria_bytes::storage::BytesStore::write`
@@ -27,7 +26,6 @@ Fully qualified path: `alexandria_bytes::storage::BytesStore::write`
 fn write(address_domain: u32, base: StorageBaseAddress, value: Bytes) -> SyscallResult<()>
 ```
 
-
 ### read_at_offset
 
 Fully qualified path: `alexandria_bytes::storage::BytesStore::read_at_offset`
@@ -35,7 +33,6 @@ Fully qualified path: `alexandria_bytes::storage::BytesStore::read_at_offset`
 ```rust
 fn read_at_offset(address_domain: u32, base: StorageBaseAddress, offset: u8) -> SyscallResult<Bytes>
 ```
-
 
 ### write_at_offset
 
@@ -47,7 +44,6 @@ fn write_at_offset(
 ) -> SyscallResult<()>
 ```
 
-
 ### size
 
 Fully qualified path: `alexandria_bytes::storage::BytesStore::size`
@@ -55,5 +51,4 @@ Fully qualified path: `alexandria_bytes::storage::BytesStore::size`
 ```rust
 fn size() -> u8
 ```
-
 
