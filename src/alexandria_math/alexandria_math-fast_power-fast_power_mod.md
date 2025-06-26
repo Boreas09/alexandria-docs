@@ -12,7 +12,7 @@ Calculate the ( base ^ power ) mod modulus using the fast powering algorithm
 
 - `T` - The result of ( base ^ power ) mod modulus
 
-#### Panics
+## Panics
 
 - `base` is 0
 

@@ -590,12 +590,12 @@ fn bytes32(val: T) -> Bytes
 
 Creates n-byte representation of a value
 
-## Arguments
+#### Arguments
 
 - `len` - The number of bytes to use for encoding
 - `val` - The value to encode
 
-## Returns
+#### Returns
 
 - `Bytes` - n-byte encoded representation
 

@@ -22,7 +22,7 @@ fn new() -> S
 
 Pushes a new value onto the stack.
 
-## Arguments
+#### Arguments
 
 - `self` - The stack to push the value onto
 - `value` - The value to push onto the stack

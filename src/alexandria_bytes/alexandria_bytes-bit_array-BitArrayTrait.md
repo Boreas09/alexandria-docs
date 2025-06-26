@@ -274,7 +274,9 @@ Reads a single word of the specified length up to 512 bits in little endian repr
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 512
 
-#### Returns `Option<u512>` - If there are `length` bits remaining, the word is returned as u512
+#### Returns `Option<u512>`
+
+- If there are `length` bits remaining, the word is returned as u512
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_le_u512`
 

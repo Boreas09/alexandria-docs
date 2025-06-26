@@ -14,7 +14,7 @@ pub trait ByteAppenderSupportTrait<T>
 
 Appends `bytes` data of size `count` ordered in big endian
 
-## Arguments
+#### Arguments
 
 - `bytes` - big endian ordered bytes to append
 - `count` - number of bytes from input to append
@@ -29,7 +29,7 @@ fn append_bytes_be(ref self: T, bytes: felt252, count: usize)
 
 Appends `bytes` data of size `count` ordered in little endian
 
-## Arguments
+#### Arguments
 
 - `bytes` - little endian ordered bytes to append
 - `count` - number of bytes from input to append

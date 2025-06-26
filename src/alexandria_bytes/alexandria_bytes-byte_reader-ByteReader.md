@@ -12,7 +12,7 @@ pub trait ByteReader<T>
 
 Wraps the array of bytes in a ByteReader for sequential consumption of integers and/or bytes
 
-## Returns
+#### Returns
 
 - `ByteReader` - The reader struct wrapping a read-only snapshot of this ByteArray
 
@@ -26,12 +26,12 @@ fn reader(self: @T) -> ByteReaderState<T>
 
 Checks that there are enough remaining bytes available
 
-## Arguments
+#### Arguments
 
 - `at` - The start index position of the byte data
 - `count` - the number of bytes required
 
-## Returns
+#### Returns
 
 - `bool` - `true` when there are `count` bytes remaining, `false` otherwise.
 

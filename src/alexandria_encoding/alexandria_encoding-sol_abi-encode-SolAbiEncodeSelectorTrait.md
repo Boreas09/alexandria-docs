@@ -14,12 +14,12 @@ pub trait SolAbiEncodeSelectorTrait
 
 Encodes a function selector as 4 bytes at the beginning of the data
 
-## Arguments
+#### Arguments
 
 - `self` - The Bytes object to append the selector to
 - `selector` - The 4-byte function selector (u32)
 
-## Returns
+#### Returns
 
 - `Bytes` - The original Bytes object with the selector appended
 

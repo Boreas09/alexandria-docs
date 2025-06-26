@@ -26,7 +26,7 @@ fn new() -> Queue<T>
 
 Adds an element to the back of the queue
 
-## Arguments
+#### Arguments
 
 - `self` - The queue to add the element to
 - `value` - The element to add

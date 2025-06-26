@@ -30,12 +30,12 @@ pub trait BitmapTrait<
 
 The bit value at the provided index of a number.
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to extract the bit value.
 - `i` - The index.
 
-## Returns
+#### Returns
 
 - The value at index.
 
@@ -49,13 +49,13 @@ fn get_bit_at(x: T, i: u8) -> bool
 
 Set the bit to value at the provided index of a number.
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to extract the bit value.
 - `i` - The index.
 - `value` - The value to set the bit to.
 
-## Returns
+#### Returns
 
 - The value with the bit set to value.
 
@@ -69,11 +69,11 @@ fn set_bit_at(x: T, i: u8, value: bool) -> T
 
 The index of the most significant bit of the number, where the least significant bit is at index 0 and the most significant bit is at index 255
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to compute the most significant bit, must be greater than 0.
 
-## Returns
+#### Returns
 
 - The index of the most significant bit
 
@@ -87,11 +87,11 @@ fn most_significant_bit(x: T) -> Option<u8>
 
 The index of the least significant bit of the number, where the least significant bit is at index 0 and the most significant bit is at index 255
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to compute the least significant bit, must be greater than 0.
 
-## Returns
+#### Returns
 
 - The index of the least significant bit
 
@@ -105,12 +105,12 @@ fn least_significant_bit(x: T) -> Option<u8>
 
 The index of the nearest left significant bit to the index of a number.
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to compute the most significant bit.
 - `i` - The index for which to start the search.
 
-## Returns
+#### Returns
 
 - The index of the nearest left significant bit, None is returned if no significant bit is found.
 
@@ -124,12 +124,12 @@ fn nearest_left_significant_bit(x: T, i: u8) -> Option<u8>
 
 The index of the nearest right significant bit to the index of a number.
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to compute the most significant bit.
 - `i` - The index for which to start the search.
 
-## Returns
+#### Returns
 
 - The index of the nearest right significant bit, None is returned if no significant bit is found.
 
@@ -143,13 +143,13 @@ fn nearest_right_significant_bit(x: T, i: u8) -> Option<u8>
 
 The index of the nearest significant bit to the index of a number, where the least significant bit is at index 0 and the most significant bit is at index 255
 
-## Arguments
+#### Arguments
 
 - `x` - The value for which to compute the most significant bit, must be greater than 0.
 - `i` - The index for which to start the search.
 - `priority` - if priority is set to true then right is prioritized over left, left over right otherwise.
 
-## Returns
+#### Returns
 
 - The index of the nearest significant bit, None is returned if no significant bit is found.
 

@@ -14,12 +14,12 @@ pub trait SolAbiDecodeTrait<T>
 
 Decodes a value of type T from bytes starting at the given offset
 
-## Arguments
+#### Arguments
 
 - `self` - Reference to the Bytes containing encoded data
 - `offset` - Mutable reference to the current offset position (updated after decode)
 
-## Returns
+#### Returns
 
 - `T` - The decoded value of type T
 

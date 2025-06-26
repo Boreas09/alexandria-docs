@@ -12,7 +12,7 @@ pub trait SpanTraitExt<T, +Clone<T>, +Drop<T>>
 
 Removes up to `n` elements from the front of `self` and returns them in a new span.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to modify
 - `n` - The number of elements to remove from the front
@@ -27,7 +27,7 @@ fn pop_front_n(ref self: Span<T>, n: usize) -> Span<T>
 
 Removes up to `n` elements from the back of `self` and returns them in a new span.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to modify
 - `n` - The number of elements to remove from the back
@@ -42,7 +42,7 @@ fn pop_back_n(ref self: Span<T>, n: usize) -> Span<T>
 
 Removes up to `n` elements from the front of `self`.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to modify
 - `n` - The number of elements to remove from the front
@@ -57,7 +57,7 @@ fn remove_front_n(ref self: Span<T>, n: usize)
 
 Removes up to `n` elements from the back of `self`.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to modify
 - `n` - The number of elements to remove from the back
@@ -72,7 +72,7 @@ fn remove_back_n(ref self: Span<T>, n: usize)
 
 Clones and appends all the elements of `self` and then `other` in a single new array.
 
-## Arguments
+#### Arguments
 
 - `self` - The first span to concatenate
 - `other` - The second span to concatenate
@@ -101,7 +101,7 @@ fn reversed(self: Span<T>) -> Array<T>
 
 Returns `true` if the span contains an element with the given value.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to search
 - `item` - The value to search for
@@ -116,7 +116,7 @@ fn contains<+PartialEq<T>>(self: Span<T>, item: @T) -> bool
 
 Searches for an element the span, returning its index.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to search
 - `item` - The value to search for
@@ -131,7 +131,7 @@ fn position<+PartialEq<T>>(self: Span<T>, item: @T) -> Option<usize>
 
 Returns the number of elements in the span with the given value.
 
-## Arguments
+#### Arguments
 
 - `self` - The span to search
 - `item` - The value to count

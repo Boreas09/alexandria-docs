@@ -12,12 +12,12 @@ pub trait I257Trait
 
 Creates a new i257 from an absolute value and sign. Ensures zero is always represented as positive.
 
-## Arguments
+#### Arguments
 
 - `abs` - The absolute value as a u256
 - `is_negative` - Whether the number is negative
 
-## Returns
+#### Returns
 
 - `i257` - The constructed signed integer
 
@@ -31,11 +31,11 @@ fn new(abs: u256, is_negative: bool) -> i257
 
 Returns whether the i257 is negative.
 
-## Arguments
+#### Arguments
 
 - `self` - The i257 to check
 
-## Returns
+#### Returns
 
 - `bool` - true if negative, false if positive or zero
 

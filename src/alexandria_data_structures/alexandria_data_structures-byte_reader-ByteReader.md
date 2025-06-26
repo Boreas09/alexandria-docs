@@ -12,7 +12,7 @@ pub trait ByteReader<T>
 
 Wraps the array of bytes in a ByteReader for sequential consumption of integers and/or bytes
 
-## Returns
+#### Returns
 
 - `ByteReader` - The reader struct wrapping a read-only snapshot of this ByteArray
 
@@ -26,12 +26,12 @@ fn reader(self: @T) -> ByteReaderState<T>
 
 Checks that there are enough remaining bytes available
 
-## Arguments
+#### Arguments
 
 - `at` - the start index position of the byte data
 - `count` - the number of bytes required
 
-## Returns
+#### Returns
 
 - `bool` - `true` when there are `count` bytes remaining, `false` otherwise.
 
@@ -189,7 +189,9 @@ fn word_u128_le(self: @T, offset: usize) -> Option<u128>
 
 Reads a u8 unsigned integer
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u8>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u8`
 
@@ -201,7 +203,9 @@ fn read_u8(ref self: ByteReaderState<T>) -> Option<u8>
 
 Reads a u16 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u16>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u16`
 
@@ -213,7 +217,9 @@ fn read_u16(ref self: ByteReaderState<T>) -> Option<u16>
 
 Reads a u16 unsigned integer in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u16>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u16_le`
 
@@ -225,7 +231,9 @@ fn read_u16_le(ref self: ByteReaderState<T>) -> Option<u16>
 
 Reads a u32 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u32>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u32`
 
@@ -237,7 +245,9 @@ fn read_u32(ref self: ByteReaderState<T>) -> Option<u32>
 
 Reads a u32 unsigned integer in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u32>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u32_le`
 
@@ -249,7 +259,9 @@ fn read_u32_le(ref self: ByteReaderState<T>) -> Option<u32>
 
 Reads a u64 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u64>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u64`
 
@@ -261,7 +273,9 @@ fn read_u64(ref self: ByteReaderState<T>) -> Option<u64>
 
 Reads a u64 unsigned integer in little endian byte order
 
-#### Returns `Option<u64>` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u64>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u64_le`
 
@@ -273,7 +287,9 @@ fn read_u64_le(ref self: ByteReaderState<T>) -> Option<u64>
 
 Reads a u128 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u128>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u128`
 
@@ -285,7 +301,9 @@ fn read_u128(ref self: ByteReaderState<T>) -> Option<u128>
 
 Reads a u128 unsigned integer in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u128>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u128_le`
 
@@ -297,7 +315,9 @@ fn read_u128_le(ref self: ByteReaderState<T>) -> Option<u128>
 
 Reads a u256 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u256>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u256`
 
@@ -309,7 +329,9 @@ fn read_u256(ref self: ByteReaderState<T>) -> Option<u256>
 
 Reads a u256 unsigned integer in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u256>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u256_le`
 
@@ -321,7 +343,9 @@ fn read_u256_le(ref self: ByteReaderState<T>) -> Option<u256>
 
 Reads a u512 unsigned integer in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u512>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u512`
 
@@ -333,7 +357,9 @@ fn read_u512(ref self: ByteReaderState<T>) -> Option<u512>
 
 Reads a u512 unsigned integer in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<u512>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_u512_le`
 
@@ -345,7 +371,9 @@ fn read_u512_le(ref self: ByteReaderState<T>) -> Option<u512>
 
 Reads an i8 signed integer in two's complement encoding from the ByteArray
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i8>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i8`
 
@@ -357,7 +385,9 @@ fn read_i8(ref self: ByteReaderState<T>) -> Option<i8>
 
 Reads an i16 signed integer in two's complement encoding from the ByteArray in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i16>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i16`
 
@@ -369,7 +399,9 @@ fn read_i16(ref self: ByteReaderState<T>) -> Option<i16>
 
 Reads an i16 signed integer in two's complement encoding from the ByteArray in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i16>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i16_le`
 
@@ -381,7 +413,9 @@ fn read_i16_le(ref self: ByteReaderState<T>) -> Option<i16>
 
 Reads an i32 signed integer in two's complement encoding from the ByteArray in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i32>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i32`
 
@@ -393,7 +427,9 @@ fn read_i32(ref self: ByteReaderState<T>) -> Option<i32>
 
 Reads an i32 signed integer in two's complement encoding from the ByteArray in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i32>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i32_le`
 
@@ -405,7 +441,9 @@ fn read_i32_le(ref self: ByteReaderState<T>) -> Option<i32>
 
 Reads an i64 signed integer in two's complement encoding from the ByteArray in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i64>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i64`
 
@@ -417,7 +455,9 @@ fn read_i64(ref self: ByteReaderState<T>) -> Option<i64>
 
 Reads an i64 signed integer in two's complement encoding from the ByteArray in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i64>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i64_le`
 
@@ -429,7 +469,9 @@ fn read_i64_le(ref self: ByteReaderState<T>) -> Option<i64>
 
 Reads an i128 signed integer in two's complement encoding from the ByteArray in big endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i128>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i128`
 
@@ -441,7 +483,9 @@ fn read_i128(ref self: ByteReaderState<T>) -> Option<i128>
 
 Reads an i128 signed integer in two's complement encoding from the ByteArray in little endian byte order
 
-#### Returns \*Option` - If there are enough bytes remaining an optional integer is returned
+#### Returns
+
+- `Option<i128>` - If there are enough bytes remaining an optional integer is returned
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::read_i128_le`
 
@@ -453,7 +497,9 @@ fn read_i128_le(ref self: ByteReaderState<T>) -> Option<i128>
 
 Remaining length count relative to what has already been consume/read
 
-#### Returns \*usize` - count number of bytes remaining
+#### Returns
+
+- `usize` - count number of bytes remaining
 
 Fully qualified path: `alexandria_data_structures::byte_reader::ByteReader::len`
 
