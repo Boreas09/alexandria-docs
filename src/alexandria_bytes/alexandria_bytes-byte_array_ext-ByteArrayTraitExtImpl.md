@@ -40,7 +40,7 @@ fn size(self: @ByteArray) -> usize
 
 ### read_u8
 
-Read a u_ from ByteArray
+Read a u\_ from ByteArray
 
 Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayTraitExtImpl::read_u8`
 
@@ -100,7 +100,17 @@ fn read_u128(self: @ByteArray, offset: usize) -> (usize, u128)
 
 ### read_u128_packed
 
-Read value with size bytes from ByteArray, and packed into u128 Arguments: - offset: the offset in Bytes - size: the number of bytes to read Returns: - new_offset: next value offset in Bytes - value: the value packed into u128
+Read value with size bytes from ByteArray, and packed into u128
+
+#### Arguments:
+
+- offset: the offset in Bytes
+- size: the number of bytes to read
+
+#### Returns:
+
+- new_offset: next value offset in Bytes
+- value: the value packed into u128
 
 Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayTraitExtImpl::read_u128_packed`
 
@@ -120,7 +130,17 @@ fn read_u256(self: @ByteArray, offset: usize) -> (usize, u256)
 
 ### read_felt252_packed
 
-Read value with size bytes from ByteArray, and packed into felt252 Arguments: - offset: the offset in Bytes - size: the number of bytes to read Returns: - new_offset: next value offset in Bytes - value: the value packed into felt252
+Read value with size bytes from ByteArray, and packed into felt252
+
+#### Arguments:
+
+- offset: the offset in Bytes
+- size: the number of bytes to read
+
+#### Returns:
+
+- new_offset: next value offset in Bytes
+- value: the value packed into felt252
 
 Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayTraitExtImpl::read_felt252_packed`
 
@@ -190,7 +210,19 @@ fn read_u256_array(self: @ByteArray, offset: usize, array_length: usize) -> (usi
 
 ### read_uint_within_size
 
-Reads an unsigned integer of type T from the ByteArray starting at a given offset, with a specified size.Inputs: - self: A reference to the ByteArray from which to read. - offset: The starting position in the ByteArray to begin reading. - size: The number of bytes to read.Outputs: - A tuple containing: - The new offset after reading the specified number of bytes. - The value of type T read from the ByteArray.
+Reads an unsigned integer of type T from the ByteArray starting at a given offset, with a specified size.
+
+#### Arguments
+
+- self: A reference to the ByteArray from which to read.
+- offset: The starting position in the ByteArray to begin reading.
+- size: The number of bytes to read.
+
+#### Returns
+
+- A tuple containing:
+  - The new offset after reading the specified number of bytes.
+  - The value of type T read from the ByteArray.
 
 Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayTraitExtImpl::read_uint_within_size`
 
@@ -321,4 +353,3 @@ Fully qualified path: `alexandria_bytes::byte_array_ext::ByteArrayTraitExtImpl::
 ```rust
 fn update_at(ref self: ByteArray, offset: usize, value: u8)
 ```
-

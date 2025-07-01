@@ -15,12 +15,10 @@ Compute the day of the week for the given Gregorian date. The returned value is 
 
 #### Examples
 
-```cairo
+```rust
 use alexandria::math::zellers_congruence::day_of_week;
 let day_of_week = day_of_week(1, 1, 2020);
 ```
-
-# TODO - Change the return type to `Result`
 
 Fully qualified path: `alexandria_math::zellers_congruence::day_of_week`
 

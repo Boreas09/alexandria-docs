@@ -1,6 +1,10 @@
 # Encoder
 
-Generic trait for encoding data into Base64 formatThis trait provides a common interface for encoding various data types into Base64 representation, which is widely used for encoding binary data in text-based formats and data transmission.  # Type Parameters * `T` - The input data type to be encoded
+Generic trait for encoding data into Base64 formatThis trait provides a common interface for encoding various data types into Base64 representation, which is widely used for encoding binary data in text-based formats and data transmission.
+
+#### Arguments
+
+- `T` - The input data type to be encoded
 
 Fully qualified path: `alexandria_encoding::base64::Encoder`
 
@@ -12,11 +16,11 @@ pub trait Encoder<T>
 
 ### encode
 
-Encodes data into Base64 format 
+Encodes data into Base64 format
 
 #### Arguments
 
-- `data` - The data to encode 
+- `data` - The data to encode
 
 #### Returns
 
@@ -27,4 +31,3 @@ Fully qualified path: `alexandria_encoding::base64::Encoder::encode`
 ```rust
 fn encode(data: T) -> Array<u8>
 ```
-

@@ -14,7 +14,7 @@ pub trait GraphTrait
 
 Create a new empty graph instance.
 
-## Returns
+#### Returns
 
 - `Graph<Nullable<Span<Node>>>` - A new empty graph
 
@@ -28,7 +28,7 @@ fn new() -> Graph<Nullable<Span<Node>>>
 
 Add a weighted directed edge to the graph.
 
-## Arguments
+#### Arguments
 
 - `self` - The graph instance to modify
 - `source` - The source node ID
@@ -45,11 +45,13 @@ fn add_edge(ref self: Graph<Nullable<Span<Node>>>, source: u32, dest: u32, weigh
 
 Calculate shortest paths from a source node to all other nodes using Dijkstra's algorithm.
 
-## Arguments
+#### Arguments
 
-- `self` - The graph instance \* `source` - The starting node ID to calculate paths from
+- `self` - The graph instance
 
-## Returns
+* `source` - The starting node ID to calculate paths from
+
+#### Returns
 
 - `Felt252Dict<u128>` - Dictionary mapping node IDs to shortest distances
 
@@ -63,12 +65,12 @@ fn shortest_path(ref self: Graph<Nullable<Span<Node>>>, source: u32) -> Felt252D
 
 Get adjacent nodes for a given source node.
 
-## Arguments
+#### Arguments
 
 - `self` - The graph instance
 - `source` - The node ID to get adjacencies for
 
-## Returns
+#### Returns
 
 - `Nullable<Span<Node>>` - Span of adjacent nodes or null if none exist
 

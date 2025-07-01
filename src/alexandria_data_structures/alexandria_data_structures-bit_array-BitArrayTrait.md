@@ -118,9 +118,9 @@ Reads a single word of the specified length up to 256 bits in big endian represe
 
 `length` - The bit length of the word to read, max 256
 
-#### Returns `Option<u256>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as u256
+- `Option<u256>` If there are `length` bits remaining, the word is returned as u256
 
 Fully qualified path: `alexandria_data_structures::bit_array::BitArrayTrait::read_word_be_u256`
 

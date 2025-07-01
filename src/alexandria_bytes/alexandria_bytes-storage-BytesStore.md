@@ -1,6 +1,12 @@
 # BytesStore
 
-Store for a `Bytes` object.The layout of a `Bytes` object in storage is as follows: * Only the size in bytes is stored in the original address where the bytes object is stored. * The actual data is stored in chunks of 256 `u128` values in another location in storage determined by the hash of: - The address storing the size of the bytes object. - The chunk index. - The short string `Bytes`.
+Store for a `Bytes` object.The layout of a `Bytes` object in storage is as follows:
+
+- Only the size in bytes is stored in the original address where the bytes object is stored.
+- The actual data is stored in chunks of 256 `u128` values in another location in storage determined by the hash of:
+  - The address storing the size of the bytes object.
+  - The chunk index.
+  - The short string `Bytes`.
 
 Fully qualified path: `alexandria_bytes::storage::BytesStore`
 
@@ -51,4 +57,3 @@ Fully qualified path: `alexandria_bytes::storage::BytesStore::size`
 ```rust
 fn size() -> u8
 ```
-

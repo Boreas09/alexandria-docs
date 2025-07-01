@@ -2,7 +2,7 @@
 
 Calculate the base ^ power using the fast powering algorithm
 
-#### Arguments
+## Arguments
 
 - `base` - The base of the exponentiation
 - `power` - The power of the exponentiation

@@ -77,9 +77,9 @@ Reads a single bit from the array
 - `self` - The BitArray to read from
 - `index` - The index into the array to read
 
-#### Returns `Option<bool>`
+#### Returns
 
-- if the index is found, the stored bool is returned
+- `Option<bool>` if the index is found, the stored bool is returned
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::at`
 
@@ -95,9 +95,9 @@ The current length of the BitArray
 
 - `self` - The BitArray to get the length of
 
-#### Returns `usize`
+#### Returns
 
-- length in bits of the BitArray
+- `usize` length in bits of the BitArray
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::len`
 
@@ -113,9 +113,9 @@ Returns and removes the first element of the BitArray
 
 - `self` - The BitArray to pop from
 
-#### Returns `Option<bool>`
+#### Returns
 
-- If the array is non-empty, a `bool` is removed from the front and returned
+- `Option<bool>` If the array is non-empty, a `bool` is removed from the front and returned
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::pop_front`
 
@@ -132,9 +132,9 @@ Reads a single word of the specified length up to 248 bits in big endian bit rep
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 248
 
-#### Returns `Option<felt252>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as felt252
+- `Option<felt252>` If there are `length` bits remaining, the word is returned as felt252
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_be`
 
@@ -151,9 +151,9 @@ Reads a single word of the specified length up to 256 bits in big endian represe
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 256
 
-#### Returns `Option<u256>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as u256
+- `Option<u256>` If there are `length` bits remaining, the word is returned as u256
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_be_u256`
 
@@ -170,9 +170,9 @@ Reads a single word of the specified length up to 512 bits in big endian represe
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 512
 
-#### Returns `Option<u512>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as u512
+-`Option<u512>` If there are `length` bits remaining, the word is returned as u512
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_be_u512`
 
@@ -236,9 +236,9 @@ Reads a single word of the specified length up to 248 bits in little endian bit 
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 248
 
-#### Returns `Option<felt252>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as felt252
+- `Option<felt252>` If there are `length` bits remaining, the word is returned as felt252
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_le`
 
@@ -255,9 +255,9 @@ Reads a single word of the specified length up to 256 bits in little endian repr
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 256
 
-#### Returns `Option<u256>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as u256
+- `Option<u256>` If there are `length` bits remaining, the word is returned as u256
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_le_u256`
 
@@ -274,9 +274,9 @@ Reads a single word of the specified length up to 512 bits in little endian repr
 - `self` - The BitArray to read from
 - `length` - The bit length of the word to read, max 512
 
-#### Returns `Option<u512>`
+#### Returns
 
-- If there are `length` bits remaining, the word is returned as u512
+- `Option<u512>` If there are `length` bits remaining, the word is returned as u512
 
 Fully qualified path: `alexandria_bytes::bit_array::BitArrayTrait::read_word_le_u512`
 

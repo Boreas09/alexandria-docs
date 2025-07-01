@@ -18,7 +18,12 @@ Returns RLPType from the leading byte with its offset in the array as well as it
 
 #### Returns
 
-- `(RLPType, offset, size)` - A tuple containing the RLPType the offset and the size of the RLPItem to decode # Errors _ empty input - if the input is empty _ input too short - if the input is too short for a given
+- `(RLPType, offset, size)` - A tuple containing the RLPType the offset and the size of the RLPItem to decode
+
+#### Errors
+
+- empty input - if the input is empty
+- input too short - if the input is too short
 
 Fully qualified path: `alexandria_encoding::rlp::RLPTrait::decode_type`
 
@@ -36,7 +41,11 @@ Recursively encodes multiple a list of RLPItems
 
 #### Returns
 
-- `Span - RLP encoded items as a span of bytes # Errors \* empty input - if the input is empty
+- `Span` - RLP encoded items as a span of bytes
+
+#### Errors
+
+- empty input - if the input is empty
 
 Fully qualified path: `alexandria_encoding::rlp::RLPTrait::encode`
 
@@ -54,7 +63,7 @@ RLP encodes a Array of bytes representing a RLP String.
 
 #### Returns
 
-- `Span - RLP encoded items as a span of bytes
+- `Span` - RLP encoded items as a span of bytes
 
 Fully qualified path: `alexandria_encoding::rlp::RLPTrait::encode_string`
 
@@ -64,7 +73,7 @@ fn encode_string(input: Span<u8>) -> Result<Span<u8>, RLPError>
 
 ### decode
 
-Recursively decodes a rlp encoded byte array as described in https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/
+Recursively decodes a rlp encoded byte array as described in [https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/)
 
 #### Arguments
 
@@ -72,7 +81,11 @@ Recursively decodes a rlp encoded byte array as described in https://ethereum.or
 
 #### Returns
 
-- `Span<RLPItem>` - Span of RLPItem # Errors \* input too short - if the input is too short for a given
+- `Span<RLPItem>` - Span of RLPItem
+
+#### Errors
+
+- input too short - if the input is too short
 
 Fully qualified path: `alexandria_encoding::rlp::RLPTrait::decode`
 

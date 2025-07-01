@@ -10,7 +10,12 @@ pub impl RLPImpl of RLPTrait
 
 ### encode_byte_array
 
-Encodes a Span of `RLPItemByteArray` (which can be either strings or lists) into a single RLP-encoded ByteArray. This function handles recursive encoding for nested lists. # Parameters _ `input`: A Span containing RLP items, where each item is either a string (ByteArray) or a nested list (Span). _ `prefix`: can be used for ex eip1559 is 0x2
+Encodes a Span of `RLPItemByteArray` (which can be either strings or lists) into a single RLP-encoded ByteArray. This function handles recursive encoding for nested lists.
+
+#### Arguments
+
+- `input`: A Span containing RLP items, where each item is either a string (ByteArray) or a nested list (Span).
+- `prefix`: can be used for ex eip1559 is 0x2
 
 #### Returns
 
@@ -24,11 +29,22 @@ fn encode_byte_array(mut input: Span<RLPItemByteArray>, prefix: u8) -> Result<@B
 
 ### encode_byte_array_string
 
-Encodes a ByteArray as an RLP string (not a list). # Parameters \* `input`: A reference to the ByteArray to encode.
+Encodes a ByteArray as an RLP string (not a list).
+
+#### Arguments
+
+- `input`: A reference to the ByteArray to encode.
 
 #### Returns
 
-- `Result<@ByteArray, RLPError>`: The RLP-encoded result or an error. ## RLP Encoding Rules for Strings: _ For empty string, the encoding is 0x80. _ For single byte less than 0x80, it’s the byte itself (no prefix). _ For strings with length < 56, prefix is 0x80 + length. _ For strings with length >= 56, prefix is 0xb7 + length-of-length, followed by actual length and data.
+- `Result<@ByteArray, RLPError>`: The RLP-encoded result or an error.
+
+#### RLP Encoding Rules for Strings:
+
+- For empty string, the encoding is `0x80`.
+- For single byte less than `0x80`, it’s the byte itself (no prefix).
+- For strings with `length` < `56`, prefix is `0x80` + `length`.
+- For strings with `length` >= `56`, prefix is `0xb7` + `length-of-length`, followed by actual `length` and data.
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPImpl::encode_byte_array_string`
 
@@ -62,7 +78,7 @@ fn encode_byte_array_list(mut inputs: Span<@ByteArray>, prefix: u8) -> Result<@B
 
 ### decode_byte_array
 
-Recursively decodes a rlp encoded byte array as described in https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/
+Recursively decodes a rlp encoded byte array as described in [https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/)
 
 #### Arguments
 
@@ -70,7 +86,12 @@ Recursively decodes a rlp encoded byte array as described in https://ethereum.or
 
 #### Returns
 
-- `Span<ByteArray>` - decoded ByteArray # Errors _ input too short - if the input is too short for a given _ empty input - if the input is len is 0
+- `Span<ByteArray>` - decoded ByteArray
+
+#### Errors
+
+- empty input - if the input is len is 0
+- input too short - if the input is too short
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPImpl::decode_byte_array`
 
@@ -80,11 +101,16 @@ fn decode_byte_array(input: @ByteArray) -> Result<Span<ByteArray>, RLPError>
 
 ### decode_byte_array_type
 
-Decodes the RLP prefix of the input and determines the type (String or List), returning the decoded payload, the total bytes read, and the inferred RLP type. # Parameters \* `input`: Reference to a ByteArray that represents RLP-encoded data.
+Decodes the RLP prefix of the input and determines the type (String or List), returning the decoded payload, the total bytes read, and the inferred RLP type.
+
+#### Arguments
+
+- `input`: Reference to a ByteArray that represents RLP-encoded data.
 
 #### Returns
 
-- `Ok((payload, total_bytes_read, RLPType))`: On success, returns the decoded payload, how many bytes were consumed from input, and whether it was a String or List. \* `Err(RLPError)`: If decoding fails due to invalid input length, or size issues.
+- `Ok((payload, total_bytes_read, RLPType))`: On success, returns the decoded payload, how many bytes were consumed from input, and whether it was a String or List.
+- `Err(RLPError)`: If decoding fails due to invalid input length, or size issues.
 
 Fully qualified path: `alexandria_encoding::rlp_byte_array::RLPImpl::decode_byte_array_type`
 

@@ -12,7 +12,7 @@ pub trait RLPTrait
 
 Encodes a Span of `RLPItemByteArray` (which can be either strings or lists) into a single RLP-encoded ByteArray. This function handles recursive encoding for nested lists.
 
-#### Parameters
+#### Arguments
 
 - `input`: A Span containing RLP items, where each item is either a string (ByteArray) or a nested list (Span).
 - `prefix`: can be used for ex eip1559 is 0x2
@@ -31,7 +31,9 @@ fn encode_byte_array(input: Span<RLPItemByteArray>, prefix: u8) -> Result<@ByteA
 
 Encodes a ByteArray as an RLP string (not a list).
 
-#### Parameters \* `input`: A reference to the ByteArray to encode.
+#### Arguments
+
+- `input`: A reference to the ByteArray to encode.
 
 #### Returns
 
@@ -76,7 +78,7 @@ fn encode_byte_array_list(inputs: Span<@ByteArray>, prefix: u8) -> Result<@ByteA
 
 ### decode_byte_array
 
-Recursively decodes a rlp encoded byte array as described in https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/
+Recursively decodes a rlp encoded byte array as described in [https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/](https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/)
 
 #### Arguments
 
@@ -101,7 +103,7 @@ fn decode_byte_array(input: @ByteArray) -> Result<Span<ByteArray>, RLPError>
 
 Decodes the RLP prefix of the input and determines the type (String or List), returning the decoded payload, the total bytes read, and the inferred RLP type.
 
-#### Parameters
+#### Arguments
 
 - `input`: Reference to a ByteArray that represents RLP-encoded data.
 
